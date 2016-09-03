@@ -1,0 +1,4 @@
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGProjectLib\bin\Debug\CCGProjectLib.dll
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGProjectLib\bin\Debug\CCGProjectLib.pdb
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.dll
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.pdb

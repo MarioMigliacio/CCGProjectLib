@@ -1,0 +1,10 @@
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTestProjectCCG\bin\Debug\UnitTestProjectCCG.dll
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTestProjectCCG\bin\Debug\UnitTestProjectCCG.pdb
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTestProjectCCG\bin\Debug\CCGProjectLib.dll
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTestProjectCCG\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTestProjectCCG\bin\Debug\CCGProjectLib.pdb
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTestProjectCCG\obj\Debug\UnitTestProjectCCG.csprojResolveAssemblyReference.cache
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTestProjectCCG\obj\Debug\UnitTestProjectCCG.dll
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTestProjectCCG\obj\Debug\UnitTestProjectCCG.pdb
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTestProjectCCG\bin\Debug\UnitTestProjectCCG.dll.CodeAnalysisLog.xml
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTestProjectCCG\bin\Debug\UnitTestProjectCCG.dll.lastcodeanalysissucceeded

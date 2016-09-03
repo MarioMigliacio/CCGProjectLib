@@ -1,0 +1,8 @@
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTests\bin\Debug\UnitTests.exe.config
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTests\bin\Debug\UnitTests.exe
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTests\bin\Debug\UnitTests.pdb
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTests\bin\Debug\CCGProjectLib.dll
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTests\bin\Debug\CCGProjectLib.pdb
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTests\obj\Debug\UnitTests.exe
+c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTests\obj\Debug\UnitTests.pdb
