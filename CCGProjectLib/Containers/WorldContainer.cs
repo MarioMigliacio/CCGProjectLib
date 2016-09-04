@@ -6,7 +6,8 @@ using CCGProjectLib.LandAreasTypes;
 namespace CCGProjectLib.Containers
 {
     /// <summary>
-    /// 
+    /// WorldContainer class provides a public dictionary which contains the Coordinate (x,y) as its key,
+    /// and the value corresponds to the BaseLandType object at that point.
     /// </summary>
     public class WorldContainer
     {
@@ -30,13 +31,11 @@ namespace CCGProjectLib.Containers
         /// <param name="landType">The TerrainType enum associated with this land mass.</param>
         public void AddTile(Coordinate coord, BaseLandType landType)
         {
-            // shortcircuit because dictionary is guaranteed distinct keys.
             if (TileType.ContainsKey(coord))
             {
                 return;
             }
 
-            // perform the add to the dictionary.
             TileType.Add(coord, landType);
         }
 
@@ -60,17 +59,15 @@ namespace CCGProjectLib.Containers
             TileType.Clear();
         }
 
+        /// <summary>
+        /// For displaying purposes of the map in format: (x, y) : LandType.
+        /// </summary>
         public void DisplayMap()
         {
             foreach (var tile in TileType)
             { 
                 Console.WriteLine($"{tile.Key.ToString()} : {tile.Value.ToString()}");
             }
-        }
-
-        public void AddTile(Coordinate coordinate)
-        {
-            throw new NotImplementedException();
         }
     }
 }

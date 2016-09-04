@@ -6,12 +6,12 @@
     public class Coordinate
     {
         /// <summary>
-        /// Provides access to the X-axis byte value. (range 0:255)
+        /// Provides public access to the X-axis byte value. (range 0:255)
         /// </summary>
         public byte X { get; set; }
 
         /// <summary>
-        /// Provides access to the Y-axis byte value. (range 0:255)
+        /// Provides public access to the Y-axis byte value. (range 0:255)
         /// </summary>
         public byte Y { get; set; }
 

@@ -1,8 +1,0 @@
-c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTestCCGProjectLib\bin\Debug\UnitTestCCGProjectLib.dll
-c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTestCCGProjectLib\bin\Debug\UnitTestCCGProjectLib.pdb
-c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTestCCGProjectLib\bin\Debug\CCGProjectLib.dll
-c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTestCCGProjectLib\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTestCCGProjectLib\bin\Debug\CCGProjectLib.pdb
-c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTestCCGProjectLib\obj\Debug\UnitTestCCGProjectLib.csprojResolveAssemblyReference.cache
-c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTestCCGProjectLib\obj\Debug\UnitTestCCGProjectLib.dll
-c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\UnitTestCCGProjectLib\obj\Debug\UnitTestCCGProjectLib.pdb
