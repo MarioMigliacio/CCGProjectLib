@@ -14,22 +14,32 @@
         /// <summary>
         /// Selects the Deep water type.
         /// </summary>
-        DeepWater,
+        Ocean,
 
         /// <summary>
         /// Selects the Coastal area type.
         /// </summary>
-        CoastArea,
+        Coast,
+
+        /// <summary>
+        /// Selects the Coastal area type.
+        /// </summary>
+        Shore,
 
         /// <summary>
         /// Selects the Hill land type.
         /// </summary>
-        HillsLand,
+        Hills,
+
+        /// <summary>
+        /// Selects the Hill land type.
+        /// </summary>
+        Valley,
 
         /// <summary>
         /// Selects the Open land type.
         /// </summary>
-        OpenLand,
+        Grassland,
 
         /// <summary>
         /// Selects the Forest type.

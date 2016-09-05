@@ -1,0 +1,9 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\bin\Release\CCGProjectLib.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\bin\Release\CCGProjectLib.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\bin\Release\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\bin\Release\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Release\CCGProjectLib.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Release\CCGProjectLib.UserStrings.SpecialStrings.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Release\CCGProjectLib.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Release\CCGProjectLib.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Release\CCGProjectLib.pdb

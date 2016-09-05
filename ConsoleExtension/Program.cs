@@ -17,6 +17,7 @@ namespace ConsoleExtension
 
             myUnitTest.TestMethod1();
             myUnitTest.TestMethod2();
+            myUnitTest.MapTest();
         }
     }
 }

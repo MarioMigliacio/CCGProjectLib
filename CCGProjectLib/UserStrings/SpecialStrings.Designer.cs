@@ -61,7 +61,7 @@ namespace CCGProjectLib.UserStrings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BasicHeavyWeight.
+        ///   Looks up a localized string similar to Big Dude that fucks shit up.
         /// </summary>
         internal static string BasicHeavyWeight {
             get {

@@ -1,0 +1,9 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGUnitTests\bin\Release\CCGUnitTests.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGUnitTests\bin\Release\CCGUnitTests.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGUnitTests\bin\Release\CCGProjectLib.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGUnitTests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGUnitTests\bin\Release\CCGProjectLib.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGUnitTests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGUnitTests\obj\Release\CCGUnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGUnitTests\obj\Release\CCGUnitTests.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGUnitTests\obj\Release\CCGUnitTests.pdb
