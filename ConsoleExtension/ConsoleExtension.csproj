@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3FECB636-1748-4993-A6E7-DE93A3B64466}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{3F3693D4-E080-403D-B1DA-75883C70F698}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CCGProjectLib</RootNamespace>
-    <AssemblyName>CCGProjectLib</AssemblyName>
+    <RootNamespace>ConsoleExtension</RootNamespace>
+    <AssemblyName>ConsoleExtension</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -30,10 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,36 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Containers\WorldContainer.cs" />
-    <Compile Include="Coordinates\Coordinate.cs" />
-    <Compile Include="Enums\UnitType.cs" />
-    <Compile Include="LandAreasTypes\Forest.cs" />
-    <Compile Include="LandAreasTypes\HillsLand.cs" />
-    <Compile Include="LandAreasTypes\OpenLand.cs" />
-    <Compile Include="LandAreasTypes\CoastArea.cs" />
-    <Compile Include="Enums\TerrainType.cs" />
-    <Compile Include="LandAreasTypes\BaseLandType.cs" />
-    <Compile Include="LandAreasTypes\DeepWater.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StaticClasses\Identifier.cs" />
-    <Compile Include="UnitTypes\BaseUnitType.cs" />
-    <Compile Include="UnitTypes\Infantry.cs" />
-    <Compile Include="UserStrings\SpecialStrings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SpecialStrings.resx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="UserStrings\SpecialStrings.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>SpecialStrings.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
+    <ProjectReference Include="..\CCGUnitTests\CCGUnitTests.csproj">
+      <Project>{2fc45a69-27c0-43ac-b7aa-add23b8d7dbb}</Project>
+      <Name>CCGUnitTests</Name>
+    </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
