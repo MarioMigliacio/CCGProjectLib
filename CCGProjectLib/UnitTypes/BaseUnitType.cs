@@ -1,11 +1,12 @@
 ﻿using CCGProjectLib.Enums;
+using System;
 
 namespace CCGProjectLib.UnitTypes
 {
     /// <summary>
     /// BaseUnitType class defines what kind of Unit Type this object represents.
     /// </summary>
-    public abstract class BaseUnitType
+    public abstract class BaseUnitType : IDisposable
     {
         /// <summary>
         /// Defined through inhereting classes, which type of Unit Type defines this Object.
@@ -33,13 +34,13 @@ namespace CCGProjectLib.UnitTypes
         public abstract string Special { get; set; }
 
         /// <summary>
-        /// Represents the units static Id.
-        /// </summary>
-        public abstract short Id { get; set; }
-
-        /// <summary>
         /// Method utilized for unit testing UnitType Objects.
         /// </summary>
         public abstract void DisplayString();
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public abstract void Dispose();
     }
 }

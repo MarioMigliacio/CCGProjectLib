@@ -1,7 +1,8 @@
 ﻿using System;
 using CCGProjectLib.Enums;
-using CCGProjectLib.StaticClasses;
 using System.Text;
+using System.Runtime.InteropServices;
+using Microsoft.Win32.SafeHandles;
 
 namespace CCGProjectLib.UnitTypes
 {
@@ -10,7 +11,14 @@ namespace CCGProjectLib.UnitTypes
     /// </summary>
     public class Infantry : BaseUnitType
     {
-        private short _id;
+        private static int counter = 0;
+        SafeHandle handle = new SafeFileHandle(IntPtr.Zero, true);
+
+        /// <summary>
+        /// Whether or not this unit has been disposed.
+        /// </summary>
+        public bool Disposed { get; set; } = false;
+
         /// <summary>
         /// Attack property returned range: { 0, 255 }.
         /// </summary>
@@ -36,14 +44,14 @@ namespace CCGProjectLib.UnitTypes
         /// </summary>
         public override UnitType UnitType { get { return UnitType.Infantry; } set { value = UnitType.Infantry; } }
 
-        public override short Id { get { return _id; } set { _id = value; } }
+        public int Id { get; set; }
 
         /// <summary>
         /// Provides a default Infantry UnitType object.
         /// </summary>
-        public Infantry(short id)
+        public Infantry()
         {
-            Id = id;
+            this.Id = System.Threading.Interlocked.Increment(ref counter);
         }
 
         /// <summary>
@@ -52,6 +60,11 @@ namespace CCGProjectLib.UnitTypes
         /// <returns>A stringly formatted version of this Infantry object.</returns>
         public override string ToString()
         {
+            if (Disposed)
+            {
+                return null;
+            }
+
             StringBuilder formattedText = new StringBuilder();
 
             formattedText.Append($"ID : {Id}\n");
@@ -70,6 +83,27 @@ namespace CCGProjectLib.UnitTypes
         public override void DisplayString()
         {
             Console.WriteLine(this.ToString());
+        }
+
+        public override void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        public void Dispose(bool disposing)
+        {
+            if (Disposed)
+            {
+                return;
+            }
+
+            if (disposing)
+            {
+                handle.Dispose();
+            }
+
+            Disposed = true;
         }
     }
 }

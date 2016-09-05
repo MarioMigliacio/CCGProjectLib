@@ -55,7 +55,6 @@
     <Compile Include="LandAreasTypes\BaseLandType.cs" />
     <Compile Include="LandAreasTypes\DeepWater.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StaticClasses\Identifier.cs" />
     <Compile Include="UnitTypes\BaseUnitType.cs" />
     <Compile Include="UnitTypes\Infantry.cs" />
     <Compile Include="UserStrings\SpecialStrings.Designer.cs">
@@ -73,7 +72,9 @@
       <LastGenOutput>SpecialStrings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="StaticClasses\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
