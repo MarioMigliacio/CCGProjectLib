@@ -1,0 +1,11 @@
+C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\ConsoleExtension.exe.config
+C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\ConsoleExtension.exe
+C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\ConsoleExtension.pdb
+C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\CCGUnitTests.dll
+C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\CCGProjectLib.dll
+C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\CCGUnitTests.pdb
+C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\CCGProjectLib.pdb
+C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\obj\Debug\ConsoleExtension.csprojResolveAssemblyReference.cache
+C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\obj\Debug\ConsoleExtension.exe
+C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\obj\Debug\ConsoleExtension.pdb
