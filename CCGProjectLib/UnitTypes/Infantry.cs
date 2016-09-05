@@ -22,20 +22,20 @@ namespace CCGProjectLib.UnitTypes
         /// <summary>
         /// Attack property returned range: { 0, 255 }.
         /// </summary>
-        public override byte Attack { get { return 1; } set { value = 1; } }
+        public override byte Attack { get { return 1; } set { Attack = 1; } }
 
         /// <summary>
         /// Defense property returned range: { 0, 255 }.
         /// </summary>
-        public override byte Defense { get { return 1; } set { value = 1; } }
+        public override byte Defense { get { return 1; } set { Defense = 1; } }
 
         /// <summary>
         /// Health property returned range: { 0, 255 }.
         /// </summary>
-        public override byte Health { get { return 1; } set { value = 1; } }
+        public override byte Health { get { return 1; } set { Health = 1; } }
 
         /// <summary>
-        /// Special attribute associated with Infantry : SpecialStrings.Infantry.
+        /// Special property associated with Infantry : SpecialStrings.Infantry.
         /// </summary>
         public override string Special { get { return UserStrings.SpecialStrings.BasicInfantry; } set { value = UserStrings.SpecialStrings.BasicInfantry; } }
         
@@ -44,7 +44,25 @@ namespace CCGProjectLib.UnitTypes
         /// </summary>
         public override UnitType UnitType { get { return UnitType.Infantry; } set { value = UnitType.Infantry; } }
 
+        /// <summary>
+        /// Corresponds to the unique counter value for a particular Infantry Unit.
+        /// </summary>
         public int Id { get; set; }
+
+        /// <summary>
+        /// MoveRange property returned range: {0, 255}.
+        /// </summary>
+        public override byte MoveRange { get { return 1; } set { MoveRange = 1; } }
+
+        /// <summary>
+        /// AttackRange property returned range: {0, 255}.
+        /// </summary>
+        public override byte AttackRange { get { return 1; } set { AttackRange = 1; } }
+
+        /// <summary>
+        /// Concealment property returned range: {0, 255}.
+        /// </summary>
+        public override byte Concealment { get { return 1; } set { Concealment = 1; } }
 
         /// <summary>
         /// Provides a default Infantry UnitType object.
@@ -85,12 +103,19 @@ namespace CCGProjectLib.UnitTypes
             Console.WriteLine(this.ToString());
         }
 
+        /// <summary>
+        /// Allows the world to dispose of this Infantry instance object.
+        /// </summary>
         public override void Dispose()
         {
             Dispose(true);
             GC.SuppressFinalize(this);
         }
 
+        /// <summary>
+        /// Manages the state of this Infantry object. Sets the Disposed property when the garbage collector finishes its job.
+        /// </summary>
+        /// <param name="disposing">Logic to perform the disposal process.</param>
         public void Dispose(bool disposing)
         {
             if (Disposed)

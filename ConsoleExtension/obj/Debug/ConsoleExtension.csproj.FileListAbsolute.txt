@@ -21,3 +21,4 @@ C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\Conso
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\obj\Debug\ConsoleExtension.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\obj\Debug\ConsoleExtension.exe
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\obj\Debug\ConsoleExtension.pdb
+C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml

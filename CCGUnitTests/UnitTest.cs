@@ -1,13 +1,8 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CCGProjectLib.Containers;
-using CCGProjectLib.Coordinates;
 using CCGProjectLib.LandAreasTypes;
 using CCGProjectLib.UnitTypes;
-<<<<<<< HEAD
-=======
-using CCGProjectLib.StaticClasses;
 using System;
->>>>>>> nehemiah
 
 namespace CCGUnitTests
 {

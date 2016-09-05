@@ -15,7 +15,7 @@ namespace ConsoleExtension
         {
             UnitTest myUnitTest = new UnitTest();
 
-            myUnitTest.TestMethod1();
+            //myUnitTest.TestMethod1();
             myUnitTest.TestMethod2();
             myUnitTest.MapTest();
         }
