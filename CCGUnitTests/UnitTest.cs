@@ -4,6 +4,7 @@ using CCGProjectLib.Coordinates;
 using CCGProjectLib.LandAreasTypes;
 using CCGProjectLib.UnitTypes;
 using CCGProjectLib.StaticClasses;
+using System;
 
 namespace CCGUnitTests
 {
@@ -20,14 +21,14 @@ namespace CCGUnitTests
         public void TestMethod1()
         {
             WorldContainer world = new WorldContainer();
-            world.AddTile(new Coordinate(0, 0), new DeepWater());
-            world.AddTile(new Coordinate(0, 1), new DeepWater());
-            world.AddTile(new Coordinate(1, 0), new DeepWater());
+            world.AddTile("AA", new Ocean());
+            world.AddTile("AB", new Ocean());
+            world.AddTile("BA", new Ocean());
 
-            world.AddTile(new Coordinate(0, 2), new CoastArea());
-            world.AddTile(new Coordinate(1, 1), new CoastArea());
-            world.AddTile(new Coordinate(1, 2), new CoastArea());
-            world.AddTile(new Coordinate(2, 2), new CoastArea());
+            world.AddTile("AC", new Coast());
+            world.AddTile("BB", new Coast());
+            world.AddTile("BC", new Coast());
+            world.AddTile("CC", new Coast());
 
             world.DisplayMap();
         }
@@ -47,6 +48,19 @@ namespace CCGUnitTests
             unit2.DisplayString();
             unit3.DisplayString();
             unit4.DisplayString();
+        }
+
+        /// <summary>
+        /// This unit test is designed to mess around with basic unit type objects and observe their behavior.
+        /// </summary>
+        [TestMethod]
+        public void MapTest()
+        {
+            WorldContainer map = new WorldContainer();
+            Random rng = new Random();
+
+            map.InitMap(rng);
+            map.DisplayMap();
         }
     }
 }

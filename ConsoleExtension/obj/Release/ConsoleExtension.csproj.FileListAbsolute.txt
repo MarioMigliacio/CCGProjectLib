@@ -1,0 +1,12 @@
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Release\ConsoleExtension.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Release\ConsoleExtension.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Release\ConsoleExtension.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Release\CCGUnitTests.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Release\CCGProjectLib.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Release\CCGUnitTests.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Release\CCGProjectLib.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\obj\Release\ConsoleExtension.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\obj\Release\ConsoleExtension.exe
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\obj\Release\ConsoleExtension.pdb
