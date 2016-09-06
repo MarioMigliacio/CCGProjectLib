@@ -37,19 +37,27 @@ namespace CCGUnitTests
         [TestMethod]
         public void TestMethod2()
         {
-            BaseUnitType anyUnit = new Infantry();
-            var unit2 = new Infantry();
-            var unit3 = new Infantry();
-            var unit4 = new Infantry();                        
-            var unit5 = new Infantry();
+            var inf1 = new Infantry();
+            var inf2 = new Infantry();
+            var inf3 = new Infantry();
+            var inf4 = new Infantry();                        
+            var inf5 = new Infantry();
 
-            unit4.Dispose();
-            
-            anyUnit.DisplayString();
-            unit2.DisplayString();
-            unit3.DisplayString();
-            unit4.DisplayString();
-            unit5.DisplayString();
+            var eng1 = new Engineer();
+            var eng2 = new Engineer();
+            var eng3 = new Engineer();
+
+            inf4.Dispose();
+            eng2.Dispose();
+
+            inf1.DisplayString();
+            inf2.DisplayString();
+            inf3.DisplayString();
+            inf4.DisplayString();
+            inf5.DisplayString();
+            eng1.DisplayString();
+            eng2.DisplayString();
+            eng3.DisplayString();
         }
 
         /// <summary>

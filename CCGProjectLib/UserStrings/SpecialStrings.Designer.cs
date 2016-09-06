@@ -61,6 +61,15 @@ namespace CCGProjectLib.UserStrings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Can build or destroy fortifications.
+        /// </summary>
+        internal static string BasicEngineer {
+            get {
+                return ResourceManager.GetString("BasicEngineer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Big Dude that fucks shit up.
         /// </summary>
         internal static string BasicHeavyWeight {

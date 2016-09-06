@@ -21,7 +21,7 @@ namespace CCGProjectLib.UnitTypes
         /// <summary>
         /// Represents the Concealment attribute for a basic unit type.
         /// </summary>
-        public abstract bool Concealment { get; set; }
+        public abstract bool Concealed { get; set; }
 
         /// <summary>
         /// Respresents the Cover attribute for a basic unit type.

@@ -19,22 +19,22 @@
         /// <summary>
         /// Selects the Engineer type.
         /// </summary>
-        Engineers,
+        Engineer,
 
         /// <summary>
         /// Selects the Scout type.
         /// </summary>
-        Scouts,
+        Scout,
 
         /// <summary>
         /// Selects the Sniper type.
         /// </summary>
-        Snipers,
+        Sniper,
 
         /// <summary>
-        /// Selects the Marines type.
+        /// Selects the Marine type.
         /// </summary>
-        Marines,
+        Marine,
 
         /// <summary>
         /// Selects the Airborn type.
@@ -52,8 +52,13 @@
         Heavy,
 
         /// <summary>
-        /// Selects the Mortars type.
+        /// Selects the Mortar type.
         /// </summary>
-        Mortars
+        Mortar,
+
+        /// <summary>
+        /// Selects the Artillary type.
+        /// </summary>
+        Artillery        
     }
 }
