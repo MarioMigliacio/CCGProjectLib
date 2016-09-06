@@ -1,4 +1,5 @@
-﻿using CCGUnitTests;
+﻿using CCGProjectLib.StaticClasses;
+using CCGUnitTests;
 
 namespace ConsoleExtension
 {
@@ -7,17 +8,31 @@ namespace ConsoleExtension
     /// </summary>
     class Program
     {
+        private static bool testing = false;
+
         /// <summary>
         /// 
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            UnitTest myUnitTest = new UnitTest();
+            if (testing == true)
+            {
+                UnitTest myUnitTest = new UnitTest();
 
-            //myUnitTest.TestMethod1();
-            myUnitTest.TestMethod2();
-            myUnitTest.MapTest();
+                //myUnitTest.TestMethod1();
+                myUnitTest.TestMethod2();
+                myUnitTest.MapTest();
+            }
+            else
+            {
+                GameLogic engine = new GameLogic();
+
+                while (engine.getPlayerMoves())
+                {
+
+                }
+            }
         }
     }
 }
