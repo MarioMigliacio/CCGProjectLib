@@ -9,9 +9,24 @@ namespace CCGProjectLib.UnitTypes
     public abstract class BaseUnitType : IDisposable
     {
         /// <summary>
-        /// Defined through inhereting classes, which type of Unit Type defines this Object.
+        /// Represents the Attack attribute for a basic unit type.
         /// </summary>
-        public abstract UnitType UnitType { get; set; }
+        public abstract byte Attack { get; set; }
+
+        /// <summary>
+        /// Represents the AttackRange attribute for a basic unit type.
+        /// </summary>
+        public abstract byte AttackRange { get; set; }
+
+        /// <summary>
+        /// Represents the Concealment attribute for a basic unit type.
+        /// </summary>
+        public abstract bool Concealment { get; set; }
+
+        /// <summary>
+        /// Respresents the Cover attribute for a basic unit type.
+        /// </summary>
+        public abstract byte Cover { get; set; }
 
         /// <summary>
         /// Represents the Defense attribute for a basic unit type.
@@ -24,9 +39,9 @@ namespace CCGProjectLib.UnitTypes
         public abstract byte Health { get; set; }
 
         /// <summary>
-        /// Represents the Attack attribute for a basic unit type.
+        /// Represents the MoveRange attribute for a basic unit type.
         /// </summary>
-        public abstract byte Attack { get; set; }
+        public abstract byte MoveRange { get; set; }
 
         /// <summary>
         /// Represents the Special attribute for a basic unit type.
@@ -34,19 +49,9 @@ namespace CCGProjectLib.UnitTypes
         public abstract string Special { get; set; }
 
         /// <summary>
-        /// Represents the MoveRange attribute for a basic unit type.
+        /// Defined through inhereting classes, which type of Unit Type defines this Object.
         /// </summary>
-        public abstract byte MoveRange { get; set; }
-
-        /// <summary>
-        /// Represents the AttackRange attribute for a basic unit type.
-        /// </summary>
-        public abstract byte AttackRange { get; set; }
-
-        /// <summary>
-        /// Represents the Concealment attribute for a basic unit type.
-        /// </summary>
-        public abstract byte Concealment { get; set; }
+        public abstract UnitType UnitType { get; set; }
 
         /// <summary>
         /// Method utilized for unit testing UnitType Objects.

@@ -11,18 +11,30 @@ namespace CCGProjectLib.UnitTypes
     /// </summary>
     public class Infantry : BaseUnitType
     {
+        // counter is in place to hold the unique ID for the Infantry object.
+        // handle is needed to utilize Dispose();
         private static int counter = 0;
         SafeHandle handle = new SafeFileHandle(IntPtr.Zero, true);
-
-        /// <summary>
-        /// Whether or not this unit has been disposed.
-        /// </summary>
-        public bool Disposed { get; set; } = false;
-
+        
         /// <summary>
         /// Attack property returned range: { 0, 255 }.
         /// </summary>
         public override byte Attack { get { return 1; } set { Attack = 1; } }
+        
+        /// <summary>
+        /// AttackRange property returned range: {0, 255}.
+        /// </summary>
+        public override byte AttackRange { get { return 1; } set { AttackRange = 1; } }
+
+        /// <summary>
+        /// Concealment property returned range: {0, 255}.
+        /// </summary>
+        public override bool Concealment { get { return true; } set { Concealment = true; } }
+
+        /// <summary>
+        /// Cover property returned range: {0, 255}.
+        /// </summary>
+        public override byte Cover { get { return 0; } set { Cover = value; } }
 
         /// <summary>
         /// Defense property returned range: { 0, 255 }.
@@ -30,19 +42,14 @@ namespace CCGProjectLib.UnitTypes
         public override byte Defense { get { return 1; } set { Defense = 1; } }
 
         /// <summary>
+        /// Whether or not this unit has been disposed.
+        /// </summary>
+        public bool Disposed { get; set; } = false;
+
+        /// <summary>
         /// Health property returned range: { 0, 255 }.
         /// </summary>
         public override byte Health { get { return 1; } set { Health = 1; } }
-
-        /// <summary>
-        /// Special property associated with Infantry : SpecialStrings.Infantry.
-        /// </summary>
-        public override string Special { get { return UserStrings.SpecialStrings.BasicInfantry; } set { value = UserStrings.SpecialStrings.BasicInfantry; } }
-        
-        /// <summary>
-        /// UnitType enumeration associated with Infantry : UnitType.Infantry.
-        /// </summary>
-        public override UnitType UnitType { get { return UnitType.Infantry; } set { value = UnitType.Infantry; } }
 
         /// <summary>
         /// Corresponds to the unique counter value for a particular Infantry Unit.
@@ -55,14 +62,14 @@ namespace CCGProjectLib.UnitTypes
         public override byte MoveRange { get { return 1; } set { MoveRange = 1; } }
 
         /// <summary>
-        /// AttackRange property returned range: {0, 255}.
+        /// Special property associated with Infantry : SpecialStrings.Infantry.
         /// </summary>
-        public override byte AttackRange { get { return 1; } set { AttackRange = 1; } }
+        public override string Special { get { return UserStrings.SpecialStrings.BasicInfantry; } set { value = UserStrings.SpecialStrings.BasicInfantry; } }
 
         /// <summary>
-        /// Concealment property returned range: {0, 255}.
+        /// UnitType enumeration associated with Infantry : UnitType.Infantry.
         /// </summary>
-        public override byte Concealment { get { return 1; } set { Concealment = 1; } }
+        public override UnitType UnitType { get { return UnitType.Infantry; } set { value = UnitType.Infantry; } }
 
         /// <summary>
         /// Provides a default Infantry UnitType object.
