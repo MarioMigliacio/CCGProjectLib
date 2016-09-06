@@ -86,7 +86,6 @@ namespace CCGProjectLib.Containers
         /// <summary>
         /// For displaying purposes of the map in format: (x, y) : LandType.
         /// </summary>
-
         public void InitMap(Random rng)
         {
             int widthOfOcean = 6;

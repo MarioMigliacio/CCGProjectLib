@@ -1,11 +1,13 @@
-c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGProjectLib\bin\Debug\CCGProjectLib.dll
-c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGProjectLib\bin\Debug\CCGProjectLib.pdb
-c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.dll
-c:\users\mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.pdb
+C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\bin\Debug\CCGProjectLib.dll
+C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\bin\Debug\CCGProjectLib.pdb
 C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.UserStrings.SpecialStrings.resources
 C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.csproj.GenerateResource.Cache
+<<<<<<< HEAD
+C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.dll
+C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.pdb
+=======
 C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\bin\Debug\CCGProjectLib.dll
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\bin\Debug\CCGProjectLib.pdb
@@ -15,3 +17,4 @@ C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGPr
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.csproj.GenerateResource.Cache
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.dll
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.pdb
+>>>>>>> nehemiah

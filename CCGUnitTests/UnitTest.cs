@@ -1,9 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CCGProjectLib.Containers;
-using CCGProjectLib.Coordinates;
 using CCGProjectLib.LandAreasTypes;
 using CCGProjectLib.UnitTypes;
-using CCGProjectLib.StaticClasses;
 using System;
 
 namespace CCGUnitTests
@@ -39,15 +37,19 @@ namespace CCGUnitTests
         [TestMethod]
         public void TestMethod2()
         {
-            BaseUnitType anyUnit = new Infantry(Identifier.Id);
-            var unit2 = new Infantry(Identifier.Id);
-            var unit3 = new Infantry(Identifier.Id);
-            var unit4 = new Infantry(Identifier.Id);
+            BaseUnitType anyUnit = new Infantry();
+            var unit2 = new Infantry();
+            var unit3 = new Infantry();
+            var unit4 = new Infantry();                        
+            var unit5 = new Infantry();
 
+            unit4.Dispose();
+            
             anyUnit.DisplayString();
             unit2.DisplayString();
             unit3.DisplayString();
             unit4.DisplayString();
+            unit5.DisplayString();
         }
 
         /// <summary>
