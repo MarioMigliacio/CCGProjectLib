@@ -44,6 +44,11 @@
         /// <summary>
         /// Selects the Forest type.
         /// </summary>
-        Forest
+        Forest, 
+
+        /// <summary>
+        /// Selects the Dunes type.
+        /// </summary>
+        Dunes
     }
 }

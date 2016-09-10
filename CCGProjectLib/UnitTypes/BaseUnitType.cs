@@ -54,6 +54,11 @@ namespace CCGProjectLib.UnitTypes
         public abstract UnitType UnitType { get; set; }
 
         /// <summary>
+        /// Represents the Vision attribute for a basic unit type.
+        /// </summary>
+        public abstract byte Vision { get; set; }
+
+        /// <summary>
         /// Method utilized for unit testing UnitType Objects.
         /// </summary>
         public abstract void DisplayString();

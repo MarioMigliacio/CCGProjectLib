@@ -60,6 +60,7 @@
     <Compile Include="UnitTypes\BaseUnitType.cs" />
     <Compile Include="UnitTypes\Engineer.cs" />
     <Compile Include="UnitTypes\Infantry.cs" />
+    <Compile Include="UnitTypes\Scout.cs" />
     <Compile Include="UserStrings\SpecialStrings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

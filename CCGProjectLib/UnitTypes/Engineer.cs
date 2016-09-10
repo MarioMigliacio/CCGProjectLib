@@ -72,6 +72,11 @@ namespace CCGProjectLib.UnitTypes
         public override UnitType UnitType { get { return UnitType.Engineer; } set { UnitType = UnitType.Engineer; } }
 
         /// <summary>
+        /// Vision property returned range: {0, 255}.
+        /// </summary>
+        public override byte Vision { get { return 1; } set { Vision = 1; } }
+
+        /// <summary>
         /// Provides a default Engineer UnitType object.
         /// </summary>
         public Engineer()

@@ -7,24 +7,24 @@ using Microsoft.Win32.SafeHandles;
 namespace CCGProjectLib.UnitTypes
 {
     /// <summary>
-    /// Infantry is a Basic land soldier in the army.
+    /// Scout is a Basic land soldier who is equipped with the ability to look into uncharted territory.
     /// </summary>
-    public class Infantry : BaseUnitType
+    class Scout : BaseUnitType
     {
-        // counter is in place to hold the unique ID for the Infantry object.
+        // counter is in place to hold the unique ID for the Scout object.
         // handle is needed to utilize Dispose();
         private static int counter = 0;
         SafeHandle handle = new SafeFileHandle(IntPtr.Zero, true);
-        
+
         /// <summary>
         /// Attack property returned range: { 0, 255 }.
         /// </summary>
         public override byte Attack { get { return 1; } set { Attack = 1; } }
-        
+
         /// <summary>
         /// AttackRange property returned range: {0, 255}.
         /// </summary>
-        public override byte AttackRange { get { return 3; } set { AttackRange = 3; } }
+        public override byte AttackRange { get { return 3; } set { Attack = 3; } }
 
         /// <summary>
         /// Concealment property returned range: {0, 255}.
@@ -34,7 +34,7 @@ namespace CCGProjectLib.UnitTypes
         /// <summary>
         /// Cover property returned range: {0, 255}.
         /// </summary>
-        public override byte Cover { get { return 0; } set { Cover = value; } }
+        public override byte Cover { get { return 1; } set { Cover = 1; } }
 
         /// <summary>
         /// Defense property returned range: { 0, 255 }.
@@ -52,42 +52,42 @@ namespace CCGProjectLib.UnitTypes
         public override byte Health { get { return 1; } set { Health = 1; } }
 
         /// <summary>
-        /// Corresponds to the unique counter value for a particular Infantry Unit.
+        /// Corresponds to the unique counter value for a particular Scout Unit.
         /// </summary>
         public int Id { get; set; }
 
         /// <summary>
         /// MoveRange property returned range: {0, 255}.
         /// </summary>
-        public override byte MoveRange { get { return 1; } set { MoveRange = 1; } }
+        public override byte MoveRange { get { return 2; } set { MoveRange = 2; } }
 
         /// <summary>
-        /// Special property associated with Infantry : SpecialStrings.Infantry.
+        /// Special property associated with Scout : SpecialStrings.Scout.
         /// </summary>
-        public override string Special { get { return UserStrings.SpecialStrings.BasicInfantry; } set { Special = UserStrings.SpecialStrings.BasicInfantry; } }
+        public override string Special { get { return UserStrings.SpecialStrings.Scout; } set { Special = UserStrings.SpecialStrings.Scout; } }
 
         /// <summary>
-        /// UnitType enumeration associated with Infantry : UnitType.Infantry.
+        /// UnitType enumeration associated with Scout : UnitType.Scout.
         /// </summary>
-        public override UnitType UnitType { get { return UnitType.Infantry; } set { UnitType = UnitType.Infantry; } }
+        public override UnitType UnitType { get { return UnitType.Scout; } set { UnitType = UnitType.Scout; } }
 
         /// <summary>
         /// Vision property returned range: {0, 255}.
         /// </summary>
-        public override byte Vision { get { return 1; } set { Vision = 1; } }
+        public override byte Vision { get { return 3; } set { Vision = 3; } }
 
         /// <summary>
-        /// Provides a default Infantry UnitType object.
+        /// Provides a default Scout UnitType object.
         /// </summary>
-        public Infantry()
+        public Scout()
         {
             this.Id = System.Threading.Interlocked.Increment(ref counter);
         }
 
         /// <summary>
-        /// ToString override returns this Infantry object with all its property values into string format.
+        /// ToString override returns this Scout object with all its property values into string format.
         /// </summary>
-        /// <returns>A stringly formatted version of this Infantry object.</returns>
+        /// <returns>A stringly formatted version of this Scout object.</returns>
         public override string ToString()
         {
             if (Disposed)
@@ -119,7 +119,7 @@ namespace CCGProjectLib.UnitTypes
         }
 
         /// <summary>
-        /// Allows the world to dispose of this Infantry instance object.
+        /// Allows the world to dispose of this Engineer instance object.
         /// </summary>
         public override void Dispose()
         {
@@ -128,7 +128,7 @@ namespace CCGProjectLib.UnitTypes
         }
 
         /// <summary>
-        /// Manages the state of this Infantry object. Sets the Disposed property when the garbage collector finishes its job.
+        /// Manages the state of this Engineer object. Sets the Disposed property when the garbage collector finishes its job.
         /// </summary>
         /// <param name="disposing">Logic to perform the disposal process.</param>
         public void Dispose(bool disposing)

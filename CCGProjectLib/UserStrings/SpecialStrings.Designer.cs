@@ -104,5 +104,14 @@ namespace CCGProjectLib.UserStrings {
                 return ResourceManager.GetString("Default", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Can view large areas of the map.
+        /// </summary>
+        internal static string Scout {
+            get {
+                return ResourceManager.GetString("Scout", resourceCulture);
+            }
+        }
     }
 }
