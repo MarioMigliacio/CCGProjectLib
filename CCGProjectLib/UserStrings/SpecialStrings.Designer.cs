@@ -61,7 +61,16 @@ namespace CCGProjectLib.UserStrings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Can build or destroy fortifications.
+        ///   Looks up a localized string similar to Unit excels in Aerial territories/vehicles.
+        /// </summary>
+        internal static string Airborn {
+            get {
+                return ResourceManager.GetString("Airborn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unit excels in sabotage and fortifications.
         /// </summary>
         internal static string BasicEngineer {
             get {
@@ -70,7 +79,7 @@ namespace CCGProjectLib.UserStrings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Big Dude that fucks shit up.
+        ///   Looks up a localized string similar to BasicHeavyWeight.
         /// </summary>
         internal static string BasicHeavyWeight {
             get {
@@ -106,7 +115,7 @@ namespace CCGProjectLib.UserStrings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unit excels in Water/Coastal and shore area types.
+        ///   Looks up a localized string similar to Unit excels in amphibious territories/vehicles.
         /// </summary>
         internal static string Marine {
             get {
@@ -115,7 +124,7 @@ namespace CCGProjectLib.UserStrings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Can view large areas of the map.
+        ///   Looks up a localized string similar to Unit can view large areas of the map.
         /// </summary>
         internal static string Scout {
             get {
@@ -124,7 +133,7 @@ namespace CCGProjectLib.UserStrings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Can attack from excessive range.
+        ///   Looks up a localized string similar to Unit can attack from excessive range.
         /// </summary>
         internal static string Sniper {
             get {

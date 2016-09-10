@@ -7,11 +7,11 @@ using Microsoft.Win32.SafeHandles;
 namespace CCGProjectLib.UnitTypes
 {
     /// <summary>
-    /// Marine is a Basic amphibious soldier who is equipped with the ability to excel in amphibious territories or vehicles.
+    /// Airborn is a Basic soldier who is equipped with the ability to excel in aerial territories or vehicles.
     /// </summary>
-    public class Marine : BaseUnitType
+    public class Airborn : BaseUnitType
     {
-        // counter is in place to hold the unique ID for the Marine object.
+        // counter is in place to hold the unique ID for the Airborn object.
         // handle is needed to utilize Dispose();
         private static int counter = 0;
         SafeHandle handle = new SafeFileHandle(IntPtr.Zero, true);
@@ -52,7 +52,7 @@ namespace CCGProjectLib.UnitTypes
         public override byte Health { get { return 1; } set { Health = 1; } }
 
         /// <summary>
-        /// Corresponds to the unique counter value for a particular Marine Unit.
+        /// Corresponds to the unique counter value for a particular Airborn Unit.
         /// </summary>
         public int Id { get; set; }
 
@@ -62,14 +62,14 @@ namespace CCGProjectLib.UnitTypes
         public override byte MoveRange { get { return 2; } set { MoveRange = 2; } }
 
         /// <summary>
-        /// Special property associated with Marine : SpecialStrings.Marine.
+        /// Special property associated with Airborn : SpecialStrings.Airborn.
         /// </summary>
-        public override string Special { get { return UserStrings.SpecialStrings.Marine; } set { Special = UserStrings.SpecialStrings.Marine; } }
+        public override string Special { get { return UserStrings.SpecialStrings.Airborn; } set { Special = UserStrings.SpecialStrings.Airborn; } }
 
         /// <summary>
-        /// UnitType enumeration associated with Marine : UnitType.Marine.
+        /// UnitType enumeration associated with Airborn : UnitType.Airborn.
         /// </summary>
-        public override UnitType UnitType { get { return UnitType.Marine; } set { UnitType = UnitType.Marine; } }
+        public override UnitType UnitType { get { return UnitType.Airborn; } set { UnitType = UnitType.Airborn; } }
 
         /// <summary>
         /// Vision property returned range: {0, 255}.
@@ -77,17 +77,17 @@ namespace CCGProjectLib.UnitTypes
         public override byte Vision { get { return 1; } set { Vision = 1; } }
 
         /// <summary>
-        /// Provides a default Marine UnitType object.
+        /// Provides a default Airborn UnitType object.
         /// </summary>
-        public Marine()
+        public Airborn()
         {
             this.Id = System.Threading.Interlocked.Increment(ref counter);
         }
 
         /// <summary>
-        /// ToString override returns this Marine object with all its property values into string format.
+        /// ToString override returns this Airborn object with all its property values into string format.
         /// </summary>
-        /// <returns>A stringly formatted version of this Marine object.</returns>
+        /// <returns>A stringly formatted version of this Airborn object.</returns>
         public override string ToString()
         {
             if (Disposed)
@@ -120,7 +120,7 @@ namespace CCGProjectLib.UnitTypes
         }
 
         /// <summary>
-        /// Allows the world to dispose of this Marine instance object.
+        /// Allows the world to dispose of this Airborn instance object.
         /// </summary>
         public override void Dispose()
         {
@@ -129,7 +129,7 @@ namespace CCGProjectLib.UnitTypes
         }
 
         /// <summary>
-        /// Manages the state of this Marine object. Sets the Disposed property when the garbage collector finishes its job.
+        /// Manages the state of this Airborn object. Sets the Disposed property when the garbage collector finishes its job.
         /// </summary>
         /// <param name="disposing">Logic to perform the disposal process.</param>
         public void Dispose(bool disposing)

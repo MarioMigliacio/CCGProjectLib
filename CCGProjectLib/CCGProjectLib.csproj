@@ -57,6 +57,7 @@
     <Compile Include="LandAreasTypes\BaseLandType.cs" />
     <Compile Include="LandAreasTypes\Ocean.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTypes\Airborn.cs" />
     <Compile Include="UnitTypes\BaseUnitType.cs" />
     <Compile Include="UnitTypes\Engineer.cs" />
     <Compile Include="UnitTypes\Infantry.cs" />

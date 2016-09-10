@@ -117,12 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Airborn" xml:space="preserve">
+    <value>Unit excels in Aerial territories/vehicles</value>
+    <comment>Used to set a Special attribute to 'Airborn'.</comment>
+  </data>
   <data name="BasicEngineer" xml:space="preserve">
-    <value>Can build or destroy fortifications</value>
+    <value>Unit excels in sabotage and fortifications</value>
     <comment>Used to set a Special attribute to BasicEngineer.</comment>
   </data>
   <data name="BasicHeavyWeight" xml:space="preserve">
-    <value>Big Dude that fucks shit up</value>
+    <value>BasicHeavyWeight</value>
     <comment>Used to set a Special attribute to 'BasicHeavyWeight'.</comment>
   </data>
   <data name="BasicInfantry" xml:space="preserve">
@@ -138,15 +142,15 @@
     <comment>Used to set a Special attribute to 'Default'.</comment>
   </data>
   <data name="Marine" xml:space="preserve">
-    <value>Unit excels in Water/Coastal and shore area types</value>
-    <comment>Ues to set a Special attribute to 'Marine'.</comment>
+    <value>Unit excels in amphibious territories/vehicles</value>
+    <comment>Used to set a Special attribute to 'Marine'.</comment>
   </data>
   <data name="Scout" xml:space="preserve">
-    <value>Can view large areas of the map</value>
+    <value>Unit can view large areas of the map</value>
     <comment>Used to set a Special attribute to 'Scout'.</comment>
   </data>
   <data name="Sniper" xml:space="preserve">
-    <value>Can attack from excessive range</value>
+    <value>Unit can attack from excessive range</value>
     <comment>Used to set a Special attribute to 'Sniper'.</comment>
   </data>
 </root>
