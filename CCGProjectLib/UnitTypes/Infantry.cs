@@ -106,6 +106,7 @@ namespace CCGProjectLib.UnitTypes
             formattedText.Append($"Health : {Health}\n");
             formattedText.Append($"Special : {Special}\n");
             formattedText.Append($"UnitType : {UnitType}\n");
+            formattedText.Append($"Vision : {Vision}\n?");
 
             return formattedText.ToString();
         }

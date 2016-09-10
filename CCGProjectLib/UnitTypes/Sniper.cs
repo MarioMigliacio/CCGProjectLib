@@ -7,11 +7,11 @@ using Microsoft.Win32.SafeHandles;
 namespace CCGProjectLib.UnitTypes
 {
     /// <summary>
-    /// Scout is a Basic land soldier who is equipped with the ability to look into uncharted territory.
+    /// Sniper is a Basic land soldier who is equipped with the ability to Attack in excessive range.
     /// </summary>
-    public class Scout : BaseUnitType
+    public class Sniper : BaseUnitType
     {
-        // counter is in place to hold the unique ID for the Scout object.
+        // counter is in place to hold the unique ID for the Sniper object.
         // handle is needed to utilize Dispose();
         private static int counter = 0;
         SafeHandle handle = new SafeFileHandle(IntPtr.Zero, true);
@@ -52,42 +52,42 @@ namespace CCGProjectLib.UnitTypes
         public override byte Health { get { return 1; } set { Health = 1; } }
 
         /// <summary>
-        /// Corresponds to the unique counter value for a particular Scout Unit.
+        /// Corresponds to the unique counter value for a particular Sniper Unit.
         /// </summary>
         public int Id { get; set; }
 
         /// <summary>
         /// MoveRange property returned range: {0, 255}.
         /// </summary>
-        public override byte MoveRange { get { return 2; } set { MoveRange = 2; } }
+        public override byte MoveRange { get { return 1; } set { MoveRange = 1; } }
 
         /// <summary>
-        /// Special property associated with Scout : SpecialStrings.Scout.
+        /// Special property associated with Sniper : SpecialStrings.Sniper.
         /// </summary>
-        public override string Special { get { return UserStrings.SpecialStrings.Scout; } set { Special = UserStrings.SpecialStrings.Scout; } }
+        public override string Special { get { return UserStrings.SpecialStrings.Sniper; } set { Special = UserStrings.SpecialStrings.Sniper; } }
 
         /// <summary>
-        /// UnitType enumeration associated with Scout : UnitType.Scout.
+        /// UnitType enumeration associated with Sniper : UnitType.Sniper.
         /// </summary>
-        public override UnitType UnitType { get { return UnitType.Scout; } set { UnitType = UnitType.Scout; } }
+        public override UnitType UnitType { get { return UnitType.Sniper; } set { UnitType = UnitType.Sniper; } }
 
         /// <summary>
         /// Vision property returned range: {0, 255}.
         /// </summary>
-        public override byte Vision { get { return 3; } set { Vision = 3; } }
+        public override byte Vision { get { return 1; } set { Vision = 1; } }
 
         /// <summary>
-        /// Provides a default Scout UnitType object.
+        /// Provides a default Sniper UnitType object.
         /// </summary>
-        public Scout()
+        public Sniper()
         {
             this.Id = System.Threading.Interlocked.Increment(ref counter);
         }
 
         /// <summary>
-        /// ToString override returns this Scout object with all its property values into string format.
+        /// ToString override returns this Sniper object with all its property values into string format.
         /// </summary>
-        /// <returns>A stringly formatted version of this Scout object.</returns>
+        /// <returns>A stringly formatted version of this Sniper object.</returns>
         public override string ToString()
         {
             if (Disposed)
@@ -120,7 +120,7 @@ namespace CCGProjectLib.UnitTypes
         }
 
         /// <summary>
-        /// Allows the world to dispose of this Scout instance object.
+        /// Allows the world to dispose of this Sniper instance object.
         /// </summary>
         public override void Dispose()
         {

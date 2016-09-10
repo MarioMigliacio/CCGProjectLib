@@ -113,5 +113,14 @@ namespace CCGProjectLib.UserStrings {
                 return ResourceManager.GetString("Scout", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Can attack from excessive range.
+        /// </summary>
+        internal static string Sniper {
+            get {
+                return ResourceManager.GetString("Sniper", resourceCulture);
+            }
+        }
     }
 }

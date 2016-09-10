@@ -141,4 +141,8 @@
     <value>Can view large areas of the map</value>
     <comment>Used to set a Special attribute to 'Scout'.</comment>
   </data>
+  <data name="Sniper" xml:space="preserve">
+    <value>Can attack from excessive range</value>
+    <comment>Used to set a Special attribute to 'Sniper'.</comment>
+  </data>
 </root>
