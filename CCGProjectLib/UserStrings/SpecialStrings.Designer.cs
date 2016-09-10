@@ -106,6 +106,15 @@ namespace CCGProjectLib.UserStrings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Unit excels in Water/Coastal and shore area types.
+        /// </summary>
+        internal static string Marine {
+            get {
+                return ResourceManager.GetString("Marine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Can view large areas of the map.
         /// </summary>
         internal static string Scout {

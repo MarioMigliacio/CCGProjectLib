@@ -137,6 +137,10 @@
     <value>Default</value>
     <comment>Used to set a Special attribute to 'Default'.</comment>
   </data>
+  <data name="Marine" xml:space="preserve">
+    <value>Unit excels in Water/Coastal and shore area types</value>
+    <comment>Ues to set a Special attribute to 'Marine'.</comment>
+  </data>
   <data name="Scout" xml:space="preserve">
     <value>Can view large areas of the map</value>
     <comment>Used to set a Special attribute to 'Scout'.</comment>
