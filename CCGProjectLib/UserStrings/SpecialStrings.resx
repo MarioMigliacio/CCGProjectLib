@@ -121,6 +121,10 @@
     <value>Unit excels in Aerial territories/vehicles</value>
     <comment>Used to set a Special attribute to 'Airborn'.</comment>
   </data>
+  <data name="Artillery" xml:space="preserve">
+    <value>Unit excels in accurate bombardment but requires vision</value>
+    <comment>Used to set a Special attribute to 'Artillery'.</comment>
+  </data>
   <data name="Default" xml:space="preserve">
     <value>Default</value>
     <comment>Used to set a Special attribute to 'Default'.</comment>
@@ -144,6 +148,10 @@
   <data name="Marine" xml:space="preserve">
     <value>Unit excels in amphibious territories/vehicles</value>
     <comment>Used to set a Special attribute to 'Marine'.</comment>
+  </data>
+  <data name="Mortar" xml:space="preserve">
+    <value>Unit excels in long range bombardment by territory without requiring vision</value>
+    <comment>Used to set a Special attribute to 'Mortar'.</comment>
   </data>
   <data name="Scout" xml:space="preserve">
     <value>Unit excels at exploring the map</value>
