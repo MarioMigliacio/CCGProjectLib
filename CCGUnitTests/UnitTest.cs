@@ -57,11 +57,16 @@ namespace CCGUnitTests
             var light2 = new Light();
             var light3 = new Light();
 
+            var heavy1 = new Heavy();
+            var heavy2 = new Heavy();
+            var heavy3 = new Heavy();
+            
             inf1.Dispose();
             eng2.Dispose();
             scout1.Dispose();
             mar3.Dispose();
             light2.Dispose();
+            heavy1.Dispose();
 
             inf1.DisplayString();
             inf2.DisplayString();
@@ -78,6 +83,9 @@ namespace CCGUnitTests
             light1.DisplayString();
             light2.DisplayString();
             light3.DisplayString();
+            heavy1.DisplayString();
+            heavy2.DisplayString();
+            heavy3.DisplayString();
         }
 
         /// <summary>

@@ -60,6 +60,7 @@
     <Compile Include="UnitTypes\Airborn.cs" />
     <Compile Include="UnitTypes\BaseUnitType.cs" />
     <Compile Include="UnitTypes\Engineer.cs" />
+    <Compile Include="UnitTypes\Heavy.cs" />
     <Compile Include="UnitTypes\Infantry.cs" />
     <Compile Include="UnitTypes\Light.cs" />
     <Compile Include="UnitTypes\Marine.cs" />

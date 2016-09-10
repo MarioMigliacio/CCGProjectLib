@@ -130,7 +130,7 @@
     <comment>Used to set a Special attribute to 'Engineer'.</comment>
   </data>
   <data name="Heavy" xml:space="preserve">
-    <value>BasicHeavyWeight</value>
+    <value>Unit excels in heavy damage at the cost of moving slowly</value>
     <comment>Used to set a Special attribute to 'Heavy'.</comment>
   </data>
   <data name="Infantry" xml:space="preserve">
@@ -146,11 +146,11 @@
     <comment>Used to set a Special attribute to 'Marine'.</comment>
   </data>
   <data name="Scout" xml:space="preserve">
-    <value>Unit can view large areas of the map</value>
+    <value>Unit excels at exploring the map</value>
     <comment>Used to set a Special attribute to 'Scout'.</comment>
   </data>
   <data name="Sniper" xml:space="preserve">
-    <value>Unit can attack from excessive range</value>
+    <value>Unit excels at maintaining deadly fire from great range</value>
     <comment>Used to set a Special attribute to 'Sniper'.</comment>
   </data>
 </root>

@@ -88,7 +88,7 @@ namespace CCGProjectLib.UserStrings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BasicHeavyWeight.
+        ///   Looks up a localized string similar to Unit excels in heavy damage at the cost of moving slowly.
         /// </summary>
         internal static string Heavy {
             get {
@@ -124,7 +124,7 @@ namespace CCGProjectLib.UserStrings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unit can view large areas of the map.
+        ///   Looks up a localized string similar to Unit excels at exploring the map.
         /// </summary>
         internal static string Scout {
             get {
@@ -133,7 +133,7 @@ namespace CCGProjectLib.UserStrings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unit can attack from excessive range.
+        ///   Looks up a localized string similar to Unit excels at maintaining deadly fire from great range.
         /// </summary>
         internal static string Sniper {
             get {
