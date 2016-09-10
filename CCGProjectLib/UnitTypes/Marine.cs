@@ -7,11 +7,11 @@ using Microsoft.Win32.SafeHandles;
 namespace CCGProjectLib.UnitTypes
 {
     /// <summary>
-    /// Engineer is a Basic land soldier who is equipped with the ability to cause destruction to vehicles or structures.
+    /// Marine is a Basic amphibious soldier who is equipped with the ability to excel in amphibious territories or vehicles.
     /// </summary>
-    public class Engineer : BaseUnitType
+    public class Marine : BaseUnitType
     {
-        // counter is in place to hold the unique ID for the Engineer object.
+        // counter is in place to hold the unique ID for the Marine object.
         // handle is needed to utilize Dispose();
         private static int counter = 0;
         SafeHandle handle = new SafeFileHandle(IntPtr.Zero, true);
@@ -52,7 +52,7 @@ namespace CCGProjectLib.UnitTypes
         public override byte Health { get { return 1; } set { Health = 1; } }
 
         /// <summary>
-        /// Corresponds to the unique counter value for a particular Engineer Unit.
+        /// Corresponds to the unique counter value for a particular Marine Unit.
         /// </summary>
         public int Id { get; set; }
 
@@ -62,14 +62,14 @@ namespace CCGProjectLib.UnitTypes
         public override byte MoveRange { get { return 2; } set { MoveRange = 2; } }
 
         /// <summary>
-        /// Special property associated with Engineer : SpecialStrings.Engineer.
+        /// Special property associated with Marine : SpecialStrings.Marine.
         /// </summary>
-        public override string Special { get { return UserStrings.SpecialStrings.Engineer; } set { Special = UserStrings.SpecialStrings.Engineer; } }
+        public override string Special { get { return UserStrings.SpecialStrings.Marine; } set { Special = UserStrings.SpecialStrings.Marine; } }
 
         /// <summary>
-        /// UnitType enumeration associated with Engineer : UnitType.Engineer.
+        /// UnitType enumeration associated with Marine : UnitType.Marine.
         /// </summary>
-        public override UnitType UnitType { get { return UnitType.Engineer; } set { UnitType = UnitType.Engineer; } }
+        public override UnitType UnitType { get { return UnitType.Marine; } set { UnitType = UnitType.Marine; } }
 
         /// <summary>
         /// Vision property returned range: {0, 255}.
@@ -77,17 +77,17 @@ namespace CCGProjectLib.UnitTypes
         public override byte Vision { get { return 1; } set { Vision = 1; } }
 
         /// <summary>
-        /// Provides a default Engineer UnitType object.
+        /// Provides a default Marine UnitType object.
         /// </summary>
-        public Engineer()
+        public Marine()
         {
             this.Id = System.Threading.Interlocked.Increment(ref counter);
         }
 
         /// <summary>
-        /// ToString override returns this Engineer object with all its property values into string format.
+        /// ToString override returns this Marine object with all its property values into string format.
         /// </summary>
-        /// <returns>A stringly formatted version of this Engineer object.</returns>
+        /// <returns>A stringly formatted version of this Marine object.</returns>
         public override string ToString()
         {
             if (Disposed)
@@ -121,7 +121,7 @@ namespace CCGProjectLib.UnitTypes
         }
 
         /// <summary>
-        /// Allows the world to dispose of this Engineer instance object.
+        /// Allows the world to dispose of this Marine instance object.
         /// </summary>
         public override void Dispose()
         {
@@ -130,7 +130,7 @@ namespace CCGProjectLib.UnitTypes
         }
 
         /// <summary>
-        /// Manages the state of this Engineer object. Sets the Disposed property when the garbage collector finishes its job.
+        /// Manages the state of this Marine object. Sets the Disposed property when the garbage collector finishes its job.
         /// </summary>
         /// <param name="disposing">Logic to perform the disposal process.</param>
         public void Dispose(bool disposing)

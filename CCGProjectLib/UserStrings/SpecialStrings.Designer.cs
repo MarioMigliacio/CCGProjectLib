@@ -61,38 +61,11 @@ namespace CCGProjectLib.UserStrings {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Can build or destroy fortifications.
+        ///   Looks up a localized string similar to Unit excels in Aerial territories/vehicles.
         /// </summary>
-        internal static string BasicEngineer {
+        internal static string Airborn {
             get {
-                return ResourceManager.GetString("BasicEngineer", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Big Dude that fucks shit up.
-        /// </summary>
-        internal static string BasicHeavyWeight {
-            get {
-                return ResourceManager.GetString("BasicHeavyWeight", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to BasicInfantry.
-        /// </summary>
-        internal static string BasicInfantry {
-            get {
-                return ResourceManager.GetString("BasicInfantry", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to BasicLightWeight.
-        /// </summary>
-        internal static string BasicLightWeight {
-            get {
-                return ResourceManager.GetString("BasicLightWeight", resourceCulture);
+                return ResourceManager.GetString("Airborn", resourceCulture);
             }
         }
         
@@ -102,6 +75,69 @@ namespace CCGProjectLib.UserStrings {
         internal static string Default {
             get {
                 return ResourceManager.GetString("Default", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unit excels in sabotage and fortifications.
+        /// </summary>
+        internal static string Engineer {
+            get {
+                return ResourceManager.GetString("Engineer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unit excels in heavy damage at the cost of moving slowly.
+        /// </summary>
+        internal static string Heavy {
+            get {
+                return ResourceManager.GetString("Heavy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Basic Infantry, cheap cost effective spawn type.
+        /// </summary>
+        internal static string Infantry {
+            get {
+                return ResourceManager.GetString("Infantry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unit excels in rapid movement.
+        /// </summary>
+        internal static string Light {
+            get {
+                return ResourceManager.GetString("Light", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unit excels in amphibious territories/vehicles.
+        /// </summary>
+        internal static string Marine {
+            get {
+                return ResourceManager.GetString("Marine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unit excels at exploring the map.
+        /// </summary>
+        internal static string Scout {
+            get {
+                return ResourceManager.GetString("Scout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unit excels at maintaining deadly fire from great range.
+        /// </summary>
+        internal static string Sniper {
+            get {
+                return ResourceManager.GetString("Sniper", resourceCulture);
             }
         }
     }

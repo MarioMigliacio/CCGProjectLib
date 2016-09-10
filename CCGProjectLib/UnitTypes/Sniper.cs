@@ -7,11 +7,11 @@ using Microsoft.Win32.SafeHandles;
 namespace CCGProjectLib.UnitTypes
 {
     /// <summary>
-    /// Engineer is a Basic land soldier who is equipped with the ability to cause destruction to vehicles or structures.
+    /// Sniper is a Basic land soldier who is equipped with the ability to Attack in excessive range.
     /// </summary>
-    public class Engineer : BaseUnitType
+    public class Sniper : BaseUnitType
     {
-        // counter is in place to hold the unique ID for the Engineer object.
+        // counter is in place to hold the unique ID for the Sniper object.
         // handle is needed to utilize Dispose();
         private static int counter = 0;
         SafeHandle handle = new SafeFileHandle(IntPtr.Zero, true);
@@ -19,12 +19,12 @@ namespace CCGProjectLib.UnitTypes
         /// <summary>
         /// Attack property returned range: { 0, 255 }.
         /// </summary>
-        public override byte Attack { get { return 1; } set { Attack = 1; } }
+        public override byte Attack { get { return 2; } set { Attack = 2; } }
 
         /// <summary>
         /// AttackRange property returned range: {0, 255}.
         /// </summary>
-        public override byte AttackRange { get { return 3; } set { Attack = 3; } }
+        public override byte AttackRange { get { return 5; } set { Attack = 5; } }
 
         /// <summary>
         /// Concealment property returned range: {0, 255}.
@@ -52,42 +52,42 @@ namespace CCGProjectLib.UnitTypes
         public override byte Health { get { return 1; } set { Health = 1; } }
 
         /// <summary>
-        /// Corresponds to the unique counter value for a particular Engineer Unit.
+        /// Corresponds to the unique counter value for a particular Sniper Unit.
         /// </summary>
         public int Id { get; set; }
 
         /// <summary>
         /// MoveRange property returned range: {0, 255}.
         /// </summary>
-        public override byte MoveRange { get { return 2; } set { MoveRange = 2; } }
+        public override byte MoveRange { get { return 1; } set { MoveRange = 1; } }
 
         /// <summary>
-        /// Special property associated with Engineer : SpecialStrings.Engineer.
+        /// Special property associated with Sniper : SpecialStrings.Sniper.
         /// </summary>
-        public override string Special { get { return UserStrings.SpecialStrings.Engineer; } set { Special = UserStrings.SpecialStrings.Engineer; } }
+        public override string Special { get { return UserStrings.SpecialStrings.Sniper; } set { Special = UserStrings.SpecialStrings.Sniper; } }
 
         /// <summary>
-        /// UnitType enumeration associated with Engineer : UnitType.Engineer.
+        /// UnitType enumeration associated with Sniper : UnitType.Sniper.
         /// </summary>
-        public override UnitType UnitType { get { return UnitType.Engineer; } set { UnitType = UnitType.Engineer; } }
+        public override UnitType UnitType { get { return UnitType.Sniper; } set { UnitType = UnitType.Sniper; } }
 
         /// <summary>
         /// Vision property returned range: {0, 255}.
         /// </summary>
-        public override byte Vision { get { return 1; } set { Vision = 1; } }
+        public override byte Vision { get { return 2; } set { Vision = 2; } }
 
         /// <summary>
-        /// Provides a default Engineer UnitType object.
+        /// Provides a default Sniper UnitType object.
         /// </summary>
-        public Engineer()
+        public Sniper()
         {
             this.Id = System.Threading.Interlocked.Increment(ref counter);
         }
 
         /// <summary>
-        /// ToString override returns this Engineer object with all its property values into string format.
+        /// ToString override returns this Sniper object with all its property values into string format.
         /// </summary>
-        /// <returns>A stringly formatted version of this Engineer object.</returns>
+        /// <returns>A stringly formatted version of this Sniper object.</returns>
         public override string ToString()
         {
             if (Disposed)
@@ -121,7 +121,7 @@ namespace CCGProjectLib.UnitTypes
         }
 
         /// <summary>
-        /// Allows the world to dispose of this Engineer instance object.
+        /// Allows the world to dispose of this Sniper instance object.
         /// </summary>
         public override void Dispose()
         {
@@ -130,7 +130,7 @@ namespace CCGProjectLib.UnitTypes
         }
 
         /// <summary>
-        /// Manages the state of this Engineer object. Sets the Disposed property when the garbage collector finishes its job.
+        /// Manages the state of this Sniper object. Sets the Disposed property when the garbage collector finishes its job.
         /// </summary>
         /// <param name="disposing">Logic to perform the disposal process.</param>
         public void Dispose(bool disposing)

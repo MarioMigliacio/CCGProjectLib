@@ -7,11 +7,11 @@ using Microsoft.Win32.SafeHandles;
 namespace CCGProjectLib.UnitTypes
 {
     /// <summary>
-    /// Engineer is a Basic land soldier who is equipped with the ability to cause destruction to vehicles or structures.
+    /// Heavy is a Basic land soldier who is equipped with the ability to move slowly while supplying heavy fire.
     /// </summary>
-    public class Engineer : BaseUnitType
+    public class Heavy : BaseUnitType
     {
-        // counter is in place to hold the unique ID for the Engineer object.
+        // counter is in place to hold the unique ID for the Heavy object.
         // handle is needed to utilize Dispose();
         private static int counter = 0;
         SafeHandle handle = new SafeFileHandle(IntPtr.Zero, true);
@@ -19,12 +19,12 @@ namespace CCGProjectLib.UnitTypes
         /// <summary>
         /// Attack property returned range: { 0, 255 }.
         /// </summary>
-        public override byte Attack { get { return 1; } set { Attack = 1; } }
+        public override byte Attack { get { return 2; } set { Attack = 2; } }
 
         /// <summary>
         /// AttackRange property returned range: {0, 255}.
         /// </summary>
-        public override byte AttackRange { get { return 3; } set { Attack = 3; } }
+        public override byte AttackRange { get { return 4; } set { AttackRange = 4; } }
 
         /// <summary>
         /// Concealment property returned range: {0, 255}.
@@ -39,7 +39,7 @@ namespace CCGProjectLib.UnitTypes
         /// <summary>
         /// Defense property returned range: { 0, 255 }.
         /// </summary>
-        public override byte Defense { get { return 1; } set { Defense = 1; } }
+        public override byte Defense { get { return 2; } set { Defense = 2; } }
 
         /// <summary>
         /// Whether or not this unit has been disposed.
@@ -49,27 +49,27 @@ namespace CCGProjectLib.UnitTypes
         /// <summary>
         /// Health property returned range: { 0, 255 }.
         /// </summary>
-        public override byte Health { get { return 1; } set { Health = 1; } }
+        public override byte Health { get { return 2; } set { Health = 2; } }
 
         /// <summary>
-        /// Corresponds to the unique counter value for a particular Engineer Unit.
+        /// Corresponds to the unique counter value for a particular Heavy Unit.
         /// </summary>
         public int Id { get; set; }
 
         /// <summary>
         /// MoveRange property returned range: {0, 255}.
         /// </summary>
-        public override byte MoveRange { get { return 2; } set { MoveRange = 2; } }
+        public override byte MoveRange { get { return 1; } set { MoveRange = 1; } }
 
         /// <summary>
-        /// Special property associated with Engineer : SpecialStrings.Engineer.
+        /// Special property associated with Heavy : SpecialStrings.Heavy.
         /// </summary>
-        public override string Special { get { return UserStrings.SpecialStrings.Engineer; } set { Special = UserStrings.SpecialStrings.Engineer; } }
+        public override string Special { get { return UserStrings.SpecialStrings.Heavy; } set { Special = UserStrings.SpecialStrings.Heavy; } }
 
         /// <summary>
-        /// UnitType enumeration associated with Engineer : UnitType.Engineer.
+        /// UnitType enumeration associated with Heavy : UnitType.Heavy.
         /// </summary>
-        public override UnitType UnitType { get { return UnitType.Engineer; } set { UnitType = UnitType.Engineer; } }
+        public override UnitType UnitType { get { return UnitType.Heavy; } set { UnitType = UnitType.Heavy; } }
 
         /// <summary>
         /// Vision property returned range: {0, 255}.
@@ -77,17 +77,17 @@ namespace CCGProjectLib.UnitTypes
         public override byte Vision { get { return 1; } set { Vision = 1; } }
 
         /// <summary>
-        /// Provides a default Engineer UnitType object.
+        /// Provides a default Heavy UnitType object.
         /// </summary>
-        public Engineer()
+        public Heavy()
         {
             this.Id = System.Threading.Interlocked.Increment(ref counter);
         }
 
         /// <summary>
-        /// ToString override returns this Engineer object with all its property values into string format.
+        /// ToString override returns this Heavy object with all its property values into string format.
         /// </summary>
-        /// <returns>A stringly formatted version of this Engineer object.</returns>
+        /// <returns>A stringly formatted version of this Heavy object.</returns>
         public override string ToString()
         {
             if (Disposed)
@@ -121,7 +121,7 @@ namespace CCGProjectLib.UnitTypes
         }
 
         /// <summary>
-        /// Allows the world to dispose of this Engineer instance object.
+        /// Allows the world to dispose of this Heavy instance object.
         /// </summary>
         public override void Dispose()
         {
@@ -130,7 +130,7 @@ namespace CCGProjectLib.UnitTypes
         }
 
         /// <summary>
-        /// Manages the state of this Engineer object. Sets the Disposed property when the garbage collector finishes its job.
+        /// Manages the state of this Heavy object. Sets the Disposed property when the garbage collector finishes its job.
         /// </summary>
         /// <param name="disposing">Logic to perform the disposal process.</param>
         public void Dispose(bool disposing)

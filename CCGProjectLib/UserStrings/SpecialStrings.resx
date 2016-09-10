@@ -117,24 +117,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="BasicEngineer" xml:space="preserve">
-    <value>Can build or destroy fortifications</value>
-    <comment>Used to set a Special attribute to BasicEngineer.</comment>
-  </data>
-  <data name="BasicHeavyWeight" xml:space="preserve">
-    <value>Big Dude that fucks shit up</value>
-    <comment>Used to set a Special attribute to 'BasicHeavyWeight'.</comment>
-  </data>
-  <data name="BasicInfantry" xml:space="preserve">
-    <value>BasicInfantry</value>
-    <comment>Used to set a Special attribute to 'BasicInfantry'.</comment>
-  </data>
-  <data name="BasicLightWeight" xml:space="preserve">
-    <value>BasicLightWeight</value>
-    <comment>Used to set a Special attribute to 'BasicLightWeight'.</comment>
+  <data name="Airborn" xml:space="preserve">
+    <value>Unit excels in Aerial territories/vehicles</value>
+    <comment>Used to set a Special attribute to 'Airborn'.</comment>
   </data>
   <data name="Default" xml:space="preserve">
     <value>Default</value>
     <comment>Used to set a Special attribute to 'Default'.</comment>
+  </data>
+  <data name="Engineer" xml:space="preserve">
+    <value>Unit excels in sabotage and fortifications</value>
+    <comment>Used to set a Special attribute to 'Engineer'.</comment>
+  </data>
+  <data name="Heavy" xml:space="preserve">
+    <value>Unit excels in heavy damage at the cost of moving slowly</value>
+    <comment>Used to set a Special attribute to 'Heavy'.</comment>
+  </data>
+  <data name="Infantry" xml:space="preserve">
+    <value>Basic Infantry, cheap cost effective spawn type</value>
+    <comment>Used to set a Special attribute to 'Infantry'.</comment>
+  </data>
+  <data name="Light" xml:space="preserve">
+    <value>Unit excels in rapid movement</value>
+    <comment>Used to set a Special attribute to 'Light'.</comment>
+  </data>
+  <data name="Marine" xml:space="preserve">
+    <value>Unit excels in amphibious territories/vehicles</value>
+    <comment>Used to set a Special attribute to 'Marine'.</comment>
+  </data>
+  <data name="Scout" xml:space="preserve">
+    <value>Unit excels at exploring the map</value>
+    <comment>Used to set a Special attribute to 'Scout'.</comment>
+  </data>
+  <data name="Sniper" xml:space="preserve">
+    <value>Unit excels at maintaining deadly fire from great range</value>
+    <comment>Used to set a Special attribute to 'Sniper'.</comment>
   </data>
 </root>

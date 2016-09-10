@@ -40,24 +40,52 @@ namespace CCGUnitTests
             var inf1 = new Infantry();
             var inf2 = new Infantry();
             var inf3 = new Infantry();
-            var inf4 = new Infantry();                        
-            var inf5 = new Infantry();
 
             var eng1 = new Engineer();
             var eng2 = new Engineer();
             var eng3 = new Engineer();
 
-            inf4.Dispose();
+            var scout1 = new Scout();
+            var scout2 = new Scout();
+            var scout3 = new Scout();
+
+            var mar1 = new Marine();
+            var mar2 = new Marine();
+            var mar3 = new Marine();
+
+            var light1 = new Light();
+            var light2 = new Light();
+            var light3 = new Light();
+
+            var heavy1 = new Heavy();
+            var heavy2 = new Heavy();
+            var heavy3 = new Heavy();
+            
+            inf1.Dispose();
             eng2.Dispose();
+            scout1.Dispose();
+            mar3.Dispose();
+            light2.Dispose();
+            heavy1.Dispose();
 
             inf1.DisplayString();
             inf2.DisplayString();
             inf3.DisplayString();
-            inf4.DisplayString();
-            inf5.DisplayString();
             eng1.DisplayString();
             eng2.DisplayString();
             eng3.DisplayString();
+            scout1.DisplayString();
+            scout2.DisplayString();
+            scout3.DisplayString();
+            mar1.DisplayString();
+            mar2.DisplayString();
+            mar3.DisplayString();
+            light1.DisplayString();
+            light2.DisplayString();
+            light3.DisplayString();
+            heavy1.DisplayString();
+            heavy2.DisplayString();
+            heavy3.DisplayString();
         }
 
         /// <summary>
