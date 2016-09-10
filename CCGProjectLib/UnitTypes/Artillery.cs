@@ -3,6 +3,7 @@ using CCGProjectLib.Enums;
 using System.Text;
 using System.Runtime.InteropServices;
 using Microsoft.Win32.SafeHandles;
+using NLog;
 
 namespace CCGProjectLib.UnitTypes
 {
@@ -15,6 +16,7 @@ namespace CCGProjectLib.UnitTypes
         // handle is needed to utilize Dispose();
         private static int counter = 0;
         SafeHandle handle = new SafeFileHandle(IntPtr.Zero, true);
+        private static Logger logger = LogManager.GetCurrentClassLogger();
 
         /// <summary>
         /// Attack property returned range: { 0, 255 }.
@@ -82,6 +84,7 @@ namespace CCGProjectLib.UnitTypes
         public Artillery()
         {
             this.Id = System.Threading.Interlocked.Increment(ref counter);
+            logger.Trace(string.Format(UserStrings.SpecialStrings.LogInstanceCreated, this.UnitType, this.Id));
         }
 
         /// <summary>
@@ -142,6 +145,7 @@ namespace CCGProjectLib.UnitTypes
 
             if (disposing)
             {
+                logger.Trace(string.Format(UserStrings.SpecialStrings.LogInstanceDisposed, this.UnitType, this.Id));
                 handle.Dispose();
             }
 

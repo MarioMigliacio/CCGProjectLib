@@ -145,6 +145,14 @@
     <value>Unit excels in rapid movement</value>
     <comment>Used to set a Special attribute to 'Light'.</comment>
   </data>
+  <data name="LogInstanceCreated" xml:space="preserve">
+    <value>Generated a new {0}. ID: {1}.</value>
+    <comment>Used to log the time creation of a unit instance.</comment>
+  </data>
+  <data name="LogInstanceDisposed" xml:space="preserve">
+    <value>{0}, ID: {1} has been disposed.</value>
+    <comment>Used to log the time when a unit becomes disposed.</comment>
+  </data>
   <data name="Marine" xml:space="preserve">
     <value>Unit excels in amphibious territories/vehicles</value>
     <comment>Used to set a Special attribute to 'Marine'.</comment>
