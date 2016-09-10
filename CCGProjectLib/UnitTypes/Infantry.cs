@@ -34,7 +34,7 @@ namespace CCGProjectLib.UnitTypes
         /// <summary>
         /// Cover property returned range: {0, 255}.
         /// </summary>
-        public override byte Cover { get { return 0; } set { Cover = value; } }
+        public override byte Cover { get { return 1; } set { Cover = 1; } }
 
         /// <summary>
         /// Defense property returned range: { 0, 255 }.
@@ -59,12 +59,12 @@ namespace CCGProjectLib.UnitTypes
         /// <summary>
         /// MoveRange property returned range: {0, 255}.
         /// </summary>
-        public override byte MoveRange { get { return 1; } set { MoveRange = 1; } }
+        public override byte MoveRange { get { return 2; } set { MoveRange = 2; } }
 
         /// <summary>
         /// Special property associated with Infantry : SpecialStrings.Infantry.
         /// </summary>
-        public override string Special { get { return UserStrings.SpecialStrings.BasicInfantry; } set { Special = UserStrings.SpecialStrings.BasicInfantry; } }
+        public override string Special { get { return UserStrings.SpecialStrings.Infantry; } set { Special = UserStrings.SpecialStrings.Infantry; } }
 
         /// <summary>
         /// UnitType enumeration associated with Infantry : UnitType.Infantry.
@@ -104,6 +104,7 @@ namespace CCGProjectLib.UnitTypes
             formattedText.Append($"Covered : {Cover}\n");
             formattedText.Append($"Defense : {Defense}\n");
             formattedText.Append($"Health : {Health}\n");
+            formattedText.Append($"MoveRange : {MoveRange}\n");
             formattedText.Append($"Special : {Special}\n");
             formattedText.Append($"UnitType : {UnitType}\n");
             formattedText.Append($"Vision : {Vision}\n");

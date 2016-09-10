@@ -70,47 +70,47 @@ namespace CCGProjectLib.UserStrings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Default.
+        /// </summary>
+        internal static string Default {
+            get {
+                return ResourceManager.GetString("Default", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Unit excels in sabotage and fortifications.
         /// </summary>
-        internal static string BasicEngineer {
+        internal static string Engineer {
             get {
-                return ResourceManager.GetString("BasicEngineer", resourceCulture);
+                return ResourceManager.GetString("Engineer", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to BasicHeavyWeight.
         /// </summary>
-        internal static string BasicHeavyWeight {
+        internal static string Heavy {
             get {
-                return ResourceManager.GetString("BasicHeavyWeight", resourceCulture);
+                return ResourceManager.GetString("Heavy", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BasicInfantry.
+        ///   Looks up a localized string similar to Basic Infantry, cheap cost effective spawn type.
         /// </summary>
-        internal static string BasicInfantry {
+        internal static string Infantry {
             get {
-                return ResourceManager.GetString("BasicInfantry", resourceCulture);
+                return ResourceManager.GetString("Infantry", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BasicLightWeight.
+        ///   Looks up a localized string similar to Unit excels in rapid movement.
         /// </summary>
-        internal static string BasicLightWeight {
+        internal static string Light {
             get {
-                return ResourceManager.GetString("BasicLightWeight", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Default.
-        /// </summary>
-        internal static string Default {
-            get {
-                return ResourceManager.GetString("Default", resourceCulture);
+                return ResourceManager.GetString("Light", resourceCulture);
             }
         }
         

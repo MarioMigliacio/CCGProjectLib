@@ -40,8 +40,6 @@ namespace CCGUnitTests
             var inf1 = new Infantry();
             var inf2 = new Infantry();
             var inf3 = new Infantry();
-            var inf4 = new Infantry();                        
-            var inf5 = new Infantry();
 
             var eng1 = new Engineer();
             var eng2 = new Engineer();
@@ -54,17 +52,20 @@ namespace CCGUnitTests
             var mar1 = new Marine();
             var mar2 = new Marine();
             var mar3 = new Marine();
-            
-            inf4.Dispose();
+
+            var light1 = new Light();
+            var light2 = new Light();
+            var light3 = new Light();
+
+            inf1.Dispose();
             eng2.Dispose();
             scout1.Dispose();
             mar3.Dispose();
+            light2.Dispose();
 
             inf1.DisplayString();
             inf2.DisplayString();
             inf3.DisplayString();
-            inf4.DisplayString();
-            inf5.DisplayString();
             eng1.DisplayString();
             eng2.DisplayString();
             eng3.DisplayString();
@@ -74,6 +75,9 @@ namespace CCGUnitTests
             mar1.DisplayString();
             mar2.DisplayString();
             mar3.DisplayString();
+            light1.DisplayString();
+            light2.DisplayString();
+            light3.DisplayString();
         }
 
         /// <summary>

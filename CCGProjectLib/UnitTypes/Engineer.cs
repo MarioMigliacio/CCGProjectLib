@@ -59,12 +59,12 @@ namespace CCGProjectLib.UnitTypes
         /// <summary>
         /// MoveRange property returned range: {0, 255}.
         /// </summary>
-        public override byte MoveRange { get { return 1; } set { MoveRange = 1; } }
+        public override byte MoveRange { get { return 2; } set { MoveRange = 2; } }
 
         /// <summary>
         /// Special property associated with Engineer : SpecialStrings.Engineer.
         /// </summary>
-        public override string Special { get { return UserStrings.SpecialStrings.BasicEngineer; } set { Special = UserStrings.SpecialStrings.BasicEngineer; } }
+        public override string Special { get { return UserStrings.SpecialStrings.Engineer; } set { Special = UserStrings.SpecialStrings.Engineer; } }
 
         /// <summary>
         /// UnitType enumeration associated with Engineer : UnitType.Engineer.
@@ -104,6 +104,7 @@ namespace CCGProjectLib.UnitTypes
             formattedText.Append($"Covered : {Cover}\n");
             formattedText.Append($"Defense : {Defense}\n");
             formattedText.Append($"Health : {Health}\n");
+            formattedText.Append($"MoveRange : {MoveRange}\n");
             formattedText.Append($"Special : {Special}\n");
             formattedText.Append($"UnitType : {UnitType}\n");
             formattedText.Append($"Vision : {Vision}\n");

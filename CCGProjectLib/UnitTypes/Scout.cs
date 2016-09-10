@@ -104,6 +104,7 @@ namespace CCGProjectLib.UnitTypes
             formattedText.Append($"Covered : {Cover}\n");
             formattedText.Append($"Defense : {Defense}\n");
             formattedText.Append($"Health : {Health}\n");
+            formattedText.Append($"MoveRange : {MoveRange}\n");
             formattedText.Append($"Special : {Special}\n");
             formattedText.Append($"UnitType : {UnitType}\n");
             formattedText.Append($"Vision : {Vision}\n");

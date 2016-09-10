@@ -121,25 +121,25 @@
     <value>Unit excels in Aerial territories/vehicles</value>
     <comment>Used to set a Special attribute to 'Airborn'.</comment>
   </data>
-  <data name="BasicEngineer" xml:space="preserve">
-    <value>Unit excels in sabotage and fortifications</value>
-    <comment>Used to set a Special attribute to BasicEngineer.</comment>
-  </data>
-  <data name="BasicHeavyWeight" xml:space="preserve">
-    <value>BasicHeavyWeight</value>
-    <comment>Used to set a Special attribute to 'BasicHeavyWeight'.</comment>
-  </data>
-  <data name="BasicInfantry" xml:space="preserve">
-    <value>BasicInfantry</value>
-    <comment>Used to set a Special attribute to 'BasicInfantry'.</comment>
-  </data>
-  <data name="BasicLightWeight" xml:space="preserve">
-    <value>BasicLightWeight</value>
-    <comment>Used to set a Special attribute to 'BasicLightWeight'.</comment>
-  </data>
   <data name="Default" xml:space="preserve">
     <value>Default</value>
     <comment>Used to set a Special attribute to 'Default'.</comment>
+  </data>
+  <data name="Engineer" xml:space="preserve">
+    <value>Unit excels in sabotage and fortifications</value>
+    <comment>Used to set a Special attribute to 'Engineer'.</comment>
+  </data>
+  <data name="Heavy" xml:space="preserve">
+    <value>BasicHeavyWeight</value>
+    <comment>Used to set a Special attribute to 'Heavy'.</comment>
+  </data>
+  <data name="Infantry" xml:space="preserve">
+    <value>Basic Infantry, cheap cost effective spawn type</value>
+    <comment>Used to set a Special attribute to 'Infantry'.</comment>
+  </data>
+  <data name="Light" xml:space="preserve">
+    <value>Unit excels in rapid movement</value>
+    <comment>Used to set a Special attribute to 'Light'.</comment>
   </data>
   <data name="Marine" xml:space="preserve">
     <value>Unit excels in amphibious territories/vehicles</value>
