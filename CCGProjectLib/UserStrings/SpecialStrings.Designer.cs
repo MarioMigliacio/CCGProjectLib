@@ -70,6 +70,15 @@ namespace CCGProjectLib.UserStrings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Unit excels in accurate bombardment but requires vision.
+        /// </summary>
+        internal static string Artillery {
+            get {
+                return ResourceManager.GetString("Artillery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Default.
         /// </summary>
         internal static string Default {
@@ -120,6 +129,15 @@ namespace CCGProjectLib.UserStrings {
         internal static string Marine {
             get {
                 return ResourceManager.GetString("Marine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unit excels in long range bombardment by territory without requiring vision.
+        /// </summary>
+        internal static string Mortar {
+            get {
+                return ResourceManager.GetString("Mortar", resourceCulture);
             }
         }
         

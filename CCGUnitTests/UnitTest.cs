@@ -60,6 +60,22 @@ namespace CCGUnitTests
             var heavy1 = new Heavy();
             var heavy2 = new Heavy();
             var heavy3 = new Heavy();
+
+            var mort1 = new Mortar();
+            var mort2 = new Mortar();
+            var mort3 = new Mortar();
+
+            var art1 = new Artillery();
+            var art2 = new Artillery();
+            var art3 = new Artillery();
+
+            var air1 = new Airborn();
+            var air2 = new Airborn();
+            var air3 = new Airborn();
+
+            var snip1 = new Sniper();
+            var snip2 = new Sniper();
+            var snip3 = new Sniper();
             
             inf1.Dispose();
             eng2.Dispose();
@@ -67,6 +83,10 @@ namespace CCGUnitTests
             mar3.Dispose();
             light2.Dispose();
             heavy1.Dispose();
+            mort3.Dispose();
+            art2.Dispose();
+            air3.Dispose();
+            snip1.Dispose();
 
             inf1.DisplayString();
             inf2.DisplayString();
@@ -86,6 +106,18 @@ namespace CCGUnitTests
             heavy1.DisplayString();
             heavy2.DisplayString();
             heavy3.DisplayString();
+            mort1.DisplayString();
+            mort2.DisplayString();
+            mort3.DisplayString();
+            art1.DisplayString();
+            art2.DisplayString();
+            art3.DisplayString();
+            air1.DisplayString();
+            air2.DisplayString();
+            air3.DisplayString();
+            snip1.DisplayString();
+            snip2.DisplayString();
+            snip3.DisplayString();
         }
 
         /// <summary>
