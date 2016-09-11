@@ -3,6 +3,7 @@ using CCGProjectLib.Enums;
 using System.Text;
 using System.Runtime.InteropServices;
 using Microsoft.Win32.SafeHandles;
+using NLog;
 
 namespace CCGProjectLib.UnitTypes
 {
@@ -13,8 +14,10 @@ namespace CCGProjectLib.UnitTypes
     {
         // counter is in place to hold the unique ID for the Infantry object.
         // handle is needed to utilize Dispose();
-        private static int counter = 0;
-        SafeHandle handle = new SafeFileHandle(IntPtr.Zero, true);
+        // _logger is the instance of the logger for this class.
+        private static int _counter = 0;
+        private SafeHandle _handle = new SafeFileHandle(IntPtr.Zero, true);
+        private static Logger _logger = LogManager.GetCurrentClassLogger();
         
         /// <summary>
         /// Attack property returned range: { 0, 255 }.
@@ -81,7 +84,8 @@ namespace CCGProjectLib.UnitTypes
         /// </summary>
         public Infantry()
         {
-            this.Id = System.Threading.Interlocked.Increment(ref counter);
+            this.Id = System.Threading.Interlocked.Increment(ref _counter);
+            _logger.Trace(string.Format(UserStrings.SpecialStrings.LogInstanceCreated, this.UnitType, this.Id));
         }
 
         /// <summary>
@@ -142,7 +146,8 @@ namespace CCGProjectLib.UnitTypes
 
             if (disposing)
             {
-                handle.Dispose();
+                _logger.Trace(string.Format(UserStrings.SpecialStrings.LogInstanceDisposed, this.UnitType, this.Id));
+                _handle.Dispose();
             }
 
             Disposed = true;

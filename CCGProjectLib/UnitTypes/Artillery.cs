@@ -14,9 +14,10 @@ namespace CCGProjectLib.UnitTypes
     {
         // counter is in place to hold the unique ID for the Artillery object.
         // handle is needed to utilize Dispose();
-        private static int counter = 0;
-        SafeHandle handle = new SafeFileHandle(IntPtr.Zero, true);
-        private static Logger logger = LogManager.GetCurrentClassLogger();
+        // _logger is the instance of the logger for this class.
+        private static int _counter = 0;
+        private SafeHandle _handle = new SafeFileHandle(IntPtr.Zero, true);
+        private static Logger _logger = LogManager.GetCurrentClassLogger();
 
         /// <summary>
         /// Attack property returned range: { 0, 255 }.
@@ -83,8 +84,8 @@ namespace CCGProjectLib.UnitTypes
         /// </summary>
         public Artillery()
         {
-            this.Id = System.Threading.Interlocked.Increment(ref counter);
-            logger.Trace(string.Format(UserStrings.SpecialStrings.LogInstanceCreated, this.UnitType, this.Id));
+            this.Id = System.Threading.Interlocked.Increment(ref _counter);
+            _logger.Trace(string.Format(UserStrings.SpecialStrings.LogInstanceCreated, this.UnitType, this.Id));
         }
 
         /// <summary>
@@ -145,8 +146,8 @@ namespace CCGProjectLib.UnitTypes
 
             if (disposing)
             {
-                logger.Trace(string.Format(UserStrings.SpecialStrings.LogInstanceDisposed, this.UnitType, this.Id));
-                handle.Dispose();
+                _logger.Trace(string.Format(UserStrings.SpecialStrings.LogInstanceDisposed, this.UnitType, this.Id));
+                _handle.Dispose();
             }
 
             Disposed = true;
