@@ -6,9 +6,7 @@ C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGPr
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.csproj.GenerateResource.Cache
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.dll
 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.pdb
-<<<<<<< HEAD
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.csprojResolveAssemblyReference.cache
-=======
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGProjectLib\bin\Debug\NLog.config
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGProjectLib\bin\Debug\CCGProjectLib.dll
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGProjectLib\bin\Debug\CCGProjectLib.pdb
