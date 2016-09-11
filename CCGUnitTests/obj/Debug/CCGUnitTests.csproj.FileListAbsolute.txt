@@ -12,7 +12,9 @@ C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGUnitTests\
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGUnitTests\bin\Debug\CCGUnitTests.pdb
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGUnitTests\bin\Debug\CCGProjectLib.dll
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGUnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGUnitTests\bin\Debug\NLog.dll
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGUnitTests\bin\Debug\CCGProjectLib.pdb
+C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGUnitTests\bin\Debug\NLog.xml
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGUnitTests\obj\Debug\CCGUnitTests.csprojResolveAssemblyReference.cache
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGUnitTests\obj\Debug\CCGUnitTests.dll
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\CCGUnitTests\obj\Debug\CCGUnitTests.pdb

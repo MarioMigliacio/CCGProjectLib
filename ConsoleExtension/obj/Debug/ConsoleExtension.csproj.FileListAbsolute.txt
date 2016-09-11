@@ -17,9 +17,11 @@ C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\ConsoleExtens
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\CCGUnitTests.dll
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\CCGProjectLib.dll
+C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\NLog.dll
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\CCGUnitTests.pdb
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\CCGProjectLib.pdb
+C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\NLog.xml
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\ConsoleExtension\obj\Debug\ConsoleExtension.csprojResolveAssemblyReference.cache
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\ConsoleExtension\obj\Debug\ConsoleExtension.exe
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\ConsoleExtension\obj\Debug\ConsoleExtension.pdb
