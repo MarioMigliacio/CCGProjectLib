@@ -124,6 +124,24 @@ namespace CCGProjectLib.UserStrings {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Generated a new {0}. ID: {1}..
+        /// </summary>
+        internal static string LogInstanceCreated {
+            get {
+                return ResourceManager.GetString("LogInstanceCreated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0}, ID: {1} has been disposed..
+        /// </summary>
+        internal static string LogInstanceDisposed {
+            get {
+                return ResourceManager.GetString("LogInstanceDisposed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Unit excels in amphibious territories/vehicles.
         /// </summary>
         internal static string Marine {
