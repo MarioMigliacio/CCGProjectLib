@@ -12,9 +12,11 @@ namespace CCGProjectLib.UnitTypes
     /// </summary>
     public class Light : BaseUnitType
     {
-        // counter is in place to hold the unique ID for the Light object.
-        // handle is needed to utilize Dispose();
-        // _logger is the instance of the logger for this class.
+        /// <summary>
+        ///  _counter is in place to hold the unique ID for the Artillery object.
+        ///  _handle is needed to utilize Dispose();
+        ///  _logger is the instance of the logger for this class.
+        /// </summary>
         private static int _counter = 0;
         private SafeHandle _handle = new SafeFileHandle(IntPtr.Zero, true);
         private static Logger _logger = LogManager.GetCurrentClassLogger();
