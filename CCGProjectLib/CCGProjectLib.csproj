@@ -51,6 +51,7 @@
     <Compile Include="Containers\WorldContainer.cs" />
     <Compile Include="Coordinates\Coordinate.cs" />
     <Compile Include="Enums\UnitType.cs" />
+    <Compile Include="GameBoard\Board.cs" />
     <Compile Include="LandAreasTypes\Valley.cs" />
     <Compile Include="LandAreasTypes\Shore.cs" />
     <Compile Include="LandAreasTypes\Forest.cs" />

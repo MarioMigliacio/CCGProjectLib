@@ -25,3 +25,6 @@ C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\ConsoleExtens
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\ConsoleExtension\obj\Debug\ConsoleExtension.csprojResolveAssemblyReference.cache
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\ConsoleExtension\obj\Debug\ConsoleExtension.exe
 C:\Users\Mario\documents\visual studio 2015\Projects\CCGProjectLib\ConsoleExtension\obj\Debug\ConsoleExtension.pdb
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\NLog.config
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\NLog.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\CCGProjectLib\ConsoleExtension\bin\Debug\NLog.xml

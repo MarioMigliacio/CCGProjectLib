@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CCGProjectLib\CCGProjectLib.csproj">
+      <Project>{3fecb636-1748-4993-a6e7-de93a3b64466}</Project>
+      <Name>CCGProjectLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CCGUnitTests\CCGUnitTests.csproj">
       <Project>{2fc45a69-27c0-43ac-b7aa-add23b8d7dbb}</Project>
       <Name>CCGUnitTests</Name>
