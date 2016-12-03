@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using CCGProjectLib.LandAreasTypes;
+using CCGProjectLib.UnitTypes;
 
 namespace CCGProjectLib.Containers
 {
@@ -14,6 +15,7 @@ namespace CCGProjectLib.Containers
         /// Public access to the Dictionary which contain Key: coordinate (x,y), Value: Enum TerrainType.
         /// </summary>
         public Dictionary<string, BaseLandType> Map { get; set; }
+        public Dictionary<string, BaseUnitType> Units { get; set; }
 
         /// <summary>
         /// Constructor for the World dude.
@@ -21,6 +23,7 @@ namespace CCGProjectLib.Containers
         public WorldContainer()
         {
             Map = new Dictionary<string, BaseLandType>();
+            Units = new Dictionary<string, BaseUnitType>();
         }
 
         /// <summary>
@@ -38,6 +41,16 @@ namespace CCGProjectLib.Containers
             Map.Add(coord, landType);
         }
 
+        public void AddUnit(string coord, BaseUnitType unitType)
+        {
+            if (Units.ContainsKey(coord))
+            {
+                return;
+            }
+
+            Units.Add(coord, unitType);
+        }
+
         /// <summary>
         /// Removes a coordinate tile key from the TileType dictionary.
         /// </summary>
@@ -49,13 +62,25 @@ namespace CCGProjectLib.Containers
                 Map.Remove(coordinate);
             }
         }
+        
+        public void MoveUnit(string start, string destination)
+        {
+            if (!Units.ContainsKey(destination) && Units.ContainsKey(start))
+            {
+                BaseUnitType mover;
+                Units.TryGetValue(start, out mover);
+                Units.Remove(start);
+                Units.Add(destination, mover);
+            }
+        }
 
         /// <summary>
         /// Calls Clear on the TileType dictionary.
         /// </summary>
-        public void ClearMap()
+        public void ClearWorld()
         {
             Map.Clear();
+            Units.Clear();
         }
 
         /// <summary>
@@ -71,7 +96,6 @@ namespace CCGProjectLib.Containers
                 {
                     for (byte w = 0; w < 25; w++)
                     {
-
                         if (w < 6)
                         {
                             AddTile($"{(char)w + 65}{(char)h + 65}", new Ocean());
