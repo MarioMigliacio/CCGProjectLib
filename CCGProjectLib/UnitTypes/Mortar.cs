@@ -8,9 +8,9 @@ using NLog;
 namespace CCGProjectLib.UnitTypes
 {
     /// <summary>
-    /// Infantry is a Basic land soldier in the army.
+    /// Mortar is an infantry unit with the ability to bombard territory from very long range without requiring vision.
     /// </summary>
-    public class Infantry : BaseUnitType
+    public class Mortar : BaseUnitType
     {
         /// <summary>
         ///  _counter is in place to hold the unique ID for the Artillery object.
@@ -20,16 +20,16 @@ namespace CCGProjectLib.UnitTypes
         private static int _counter = 0;
         private SafeHandle _handle = new SafeFileHandle(IntPtr.Zero, true);
         private static Logger _logger = LogManager.GetCurrentClassLogger();
-        
+
         /// <summary>
         /// Attack property returned range: { 0, 255 }.
         /// </summary>
-        public override byte Attack { get { return 1; } set { Attack = 1; } }
-        
+        public override byte Attack { get { return 2; } set { Attack = 2; } }
+
         /// <summary>
         /// AttackRange property returned range: {0, 255}.
         /// </summary>
-        public override byte AttackRange { get { return 3; } set { AttackRange = 3; } }
+        public override byte AttackRange { get { return 7; } set { AttackRange = 7; } }
 
         /// <summary>
         /// Concealment property returned range: {0, 255}.
@@ -57,43 +57,43 @@ namespace CCGProjectLib.UnitTypes
         public override byte Health { get { return 1; } set { Health = 1; } }
 
         /// <summary>
-        /// Corresponds to the unique counter value for a particular Infantry Unit.
+        /// Corresponds to the unique counter value for a particular Mortar Unit.
         /// </summary>
         public int Id { get; set; }
 
         /// <summary>
         /// MoveRange property returned range: {0, 255}.
         /// </summary>
-        public override byte MoveRange { get { return 2; } set { MoveRange = 2; } }
+        public override byte MoveRange { get { return 1; } set { MoveRange = 1; } }
 
         /// <summary>
-        /// Special property associated with Infantry : SpecialStrings.Infantry.
+        /// Special property associated with Mortar : SpecialStrings.Mortar.
         /// </summary>
-        public override string Special { get { return UserStrings.SpecialStrings.Infantry; } set { Special = UserStrings.SpecialStrings.Infantry; } }
+        public override string Special { get { return UserStrings.SpecialStrings.Mortar; } set { Special = UserStrings.SpecialStrings.Mortar; } }
 
         /// <summary>
-        /// UnitType enumeration associated with Infantry : UnitType.Infantry.
+        /// UnitType enumeration associated with Mortar : UnitType.Mortar.
         /// </summary>
-        public override UnitType UnitType { get { return UnitType.Infantry; } set { UnitType = UnitType.Infantry; } }
+        public override UnitType UnitType { get { return UnitType.Mortar; } set { UnitType = UnitType.Mortar; } }
 
         /// <summary>
         /// Vision property returned range: {0, 255}.
         /// </summary>
-        public override byte Vision { get { return 1; } set { Vision = 1; } }
+        public override byte Vision { get { return 2; } set { Vision = 2; } }
 
         /// <summary>
-        /// Provides a default Infantry UnitType object.
+        /// Provides a default Mortar UnitType object.
         /// </summary>
-        public Infantry()
+        public Mortar()
         {
             this.Id = System.Threading.Interlocked.Increment(ref _counter);
             _logger.Trace(string.Format(UserStrings.SpecialStrings.LogInstanceCreated, this.UnitType, this.Id));
         }
 
         /// <summary>
-        /// ToString override returns this Infantry object with all its property values into string format.
+        /// ToString override returns this Mortar object with all its property values into string format.
         /// </summary>
-        /// <returns>A stringly formatted version of this Infantry object.</returns>
+        /// <returns>A stringly formatted version of this Mortar object.</returns>
         public override string ToString()
         {
             if (Disposed)
@@ -127,7 +127,7 @@ namespace CCGProjectLib.UnitTypes
         }
 
         /// <summary>
-        /// Allows the world to dispose of this Infantry instance object.
+        /// Allows the world to dispose of this Mortar instance object.
         /// </summary>
         public override void Dispose()
         {
@@ -136,7 +136,7 @@ namespace CCGProjectLib.UnitTypes
         }
 
         /// <summary>
-        /// Manages the state of this Infantry object. Sets the Disposed property when the garbage collector finishes its job.
+        /// Manages the state of this Mortar object. Sets the Disposed property when the garbage collector finishes its job.
         /// </summary>
         /// <param name="disposing">Logic to perform the disposal process.</param>
         public void Dispose(bool disposing)
