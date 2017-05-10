@@ -9,7 +9,7 @@ namespace ConsoleExtension
     /// </summary>
     class Program
     {
-        private static bool testing = false;
+        private static bool testing = true;
 
         /// <summary>
         /// 

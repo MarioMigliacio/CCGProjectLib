@@ -37,6 +37,7 @@ namespace CCGUnitTests
         [TestMethod]
         public void TestMethod2()
         {
+            BaseUnitType gUnit = new Infantry();
             var inf1 = new Infantry();
             var inf2 = new Infantry();
             var inf3 = new Infantry();

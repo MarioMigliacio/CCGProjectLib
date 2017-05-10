@@ -21,3 +21,4 @@ C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib
 C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.csproj.GenerateResource.Cache
 C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.dll
 C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.pdb
+C:\Users\Mario\Documents\Visual Studio 2015\Projects\CCGProjectLib\CCGProjectLib\obj\Debug\CCGProjectLib.csprojResolveAssemblyReference.cache
